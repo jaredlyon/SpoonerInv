@@ -15,3 +15,4 @@ This repository is already configured to properly build (independently of the on
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
 
+test -Nick
