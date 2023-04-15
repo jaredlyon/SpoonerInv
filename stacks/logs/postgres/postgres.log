@@ -82,3 +82,8 @@
 2023-04-13 14:56:29.252 UTC [1356] LOG:  background worker "logical replication launcher" (PID 1386) exited with exit code 1
 2023-04-13 14:56:29.253 UTC [1381] LOG:  shutting down
 2023-04-13 14:56:29.310 UTC [1356] LOG:  database system is shut down
+2023-04-15 16:45:38.321 UTC [1359] LOG:  starting PostgreSQL 13.10 (Ubuntu 13.10-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit
+2023-04-15 16:45:38.321 UTC [1359] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-04-15 16:45:38.332 UTC [1359] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2023-04-15 16:45:38.590 UTC [1388] LOG:  database system was shut down at 2023-04-13 14:56:29 UTC
+2023-04-15 16:45:38.660 UTC [1359] LOG:  database system is ready to accept connections

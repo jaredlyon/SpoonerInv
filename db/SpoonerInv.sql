@@ -63,7 +63,10 @@ create table if not exists Store
     store_id  int primary key,
     name      varchar(50) unique not null,
     hours     varchar(100),
-    region_id int                not null
+    region_id int                not null,
+    street varchar(75),
+    city varchar(50),
+    zip int
 );
 
 create table if not exists `Order`

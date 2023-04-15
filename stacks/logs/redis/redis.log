@@ -384,3 +384,29 @@
 1838:C 13 Apr 2023 14:53:17.042 * DB saved on disk
 1838:C 13 Apr 2023 14:53:17.043 * RDB: 0 MB of memory used by copy-on-write
 1346:M 13 Apr 2023 14:53:17.136 * Background saving terminated with success
+1346:C 15 Apr 2023 16:45:37.976 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1346:C 15 Apr 2023 16:45:37.976 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1346, just started
+1346:C 15 Apr 2023 16:45:37.976 # Configuration loaded
+1346:M 15 Apr 2023 16:45:37.977 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1346
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1346:M 15 Apr 2023 16:45:37.990 # Server initialized
+1346:M 15 Apr 2023 16:45:37.991 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1346:M 15 Apr 2023 16:45:38.001 * DB loaded from disk: 0.010 seconds
+1346:M 15 Apr 2023 16:45:38.001 * Ready to accept connections
