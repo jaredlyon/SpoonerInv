@@ -1,0 +1,201 @@
+stock_id,order_datetime,name,quanitiy
+1,4/26/2022,Raw Strawberries,13
+2,11/5/2022,Raw Pineapples,75
+3,1/17/2023,Lychee Tea,17
+4,1/27/2023,Honey,53
+5,11/21/2022,Black Tea,54
+6,7/16/2022,Tapioca,89
+7,9/20/2022,Green Tea,59
+8,2/5/2023,Ube Flavoring,10
+9,7/19/2022,Honey,24
+10,5/6/2022,Tapioca,73
+11,7/31/2022,Honey,3
+12,6/3/2022,Tapioca,12
+13,8/24/2022,Cane Sugar,21
+14,11/3/2022,Ube Flavoring,15
+15,1/3/2023,Raw Strawberries,93
+16,2/2/2023,Canned Coconut Juice,65
+17,11/16/2022,Raw Strawberries,100
+18,1/30/2023,Honey,91
+19,4/6/2023,Lychee Tea,80
+20,5/27/2022,Ube Flavoring,39
+21,1/16/2023,Ube Flavoring,93
+22,4/8/2023,Ube Flavoring,91
+23,11/5/2022,Canned Mango Juice,2
+24,11/22/2022,Raw Strawberries,70
+25,5/1/2022,Raw Pineapples,86
+26,8/21/2022,Milk,16
+27,6/20/2022,Canned Coconut Juice,50
+28,1/11/2023,Canned Mango Juice,80
+29,3/16/2023,Green Tea,37
+30,7/11/2022,Lychee Tea,14
+31,6/2/2022,Honey,12
+32,7/11/2022,Black Tea,13
+33,2/4/2023,Ube Flavoring,41
+34,1/17/2023,Canned Coconut Juice,56
+35,12/5/2022,Raw Pineapples,55
+36,2/8/2023,Lychee Tea,66
+37,10/5/2022,Milk,65
+38,7/15/2022,Green Tea,48
+39,3/10/2023,Raw Strawberries,53
+40,8/24/2022,Canned Coconut Juice,97
+41,1/7/2023,Tapioca,80
+42,4/14/2023,Raw Strawberries,69
+43,12/10/2022,Raw Pineapples,32
+44,9/29/2022,Ube Flavoring,22
+45,7/1/2022,Lychee Tea,71
+46,5/24/2022,Canned Coconut Juice,36
+47,11/27/2022,Honey,31
+48,7/28/2022,Tapioca,32
+49,12/11/2022,Ube Flavoring,38
+50,4/12/2023,Canned Coconut Juice,69
+51,11/20/2022,Canned Mango Juice,92
+52,1/28/2023,Milk,52
+53,8/8/2022,Milk,78
+54,2/20/2023,Canned Coconut Juice,14
+55,2/27/2023,Tapioca,25
+56,4/13/2023,Canned Coconut Juice,77
+57,2/9/2023,Milk,52
+58,7/18/2022,Canned Mango Juice,34
+59,9/2/2022,Black Tea,90
+60,2/21/2023,Canned Coconut Juice,24
+61,5/10/2022,Black Tea,86
+62,2/16/2023,Raw Strawberries,73
+63,4/6/2023,Black Tea,63
+64,11/1/2022,Canned Coconut Juice,70
+65,11/15/2022,Canned Coconut Juice,34
+66,12/5/2022,Raw Pineapples,16
+67,4/4/2023,Raw Pineapples,15
+68,7/1/2022,Milk,13
+69,12/27/2022,Green Tea,78
+70,6/23/2022,Honey,28
+71,6/22/2022,Lychee Tea,75
+72,8/13/2022,Milk,38
+73,4/18/2022,Cane Sugar,45
+74,11/29/2022,Black Tea,36
+75,1/14/2023,Black Tea,34
+76,12/2/2022,Green Tea,82
+77,3/22/2023,Raw Pineapples,2
+78,5/20/2022,Raw Strawberries,90
+79,9/27/2022,Raw Pineapples,31
+80,3/8/2023,Raw Strawberries,8
+81,8/4/2022,Ube Flavoring,36
+82,9/8/2022,Cane Sugar,31
+83,2/21/2023,Tapioca,5
+84,1/16/2023,Honey,53
+85,12/7/2022,Cane Sugar,16
+86,2/23/2023,Canned Coconut Juice,34
+87,7/2/2022,Ube Flavoring,36
+88,11/11/2022,Ube Flavoring,11
+89,4/6/2023,Canned Mango Juice,3
+90,5/26/2022,Honey,35
+91,9/23/2022,Tapioca,9
+92,7/20/2022,Green Tea,52
+93,4/18/2022,Raw Pineapples,12
+94,7/3/2022,Lychee Tea,70
+95,11/25/2022,Black Tea,23
+96,1/7/2023,Tapioca,8
+97,5/4/2022,Tapioca,39
+98,1/16/2023,Raw Pineapples,37
+99,4/25/2022,Black Tea,27
+100,12/23/2022,Cane Sugar,93
+101,7/26/2022,Cane Sugar,63
+102,5/17/2022,Canned Coconut Juice,28
+103,12/24/2022,Cane Sugar,94
+104,3/3/2023,Canned Coconut Juice,48
+105,3/21/2023,Raw Pineapples,96
+106,6/28/2022,Raw Strawberries,35
+107,12/12/2022,Canned Coconut Juice,75
+108,8/14/2022,Ube Flavoring,68
+109,2/24/2023,Canned Coconut Juice,32
+110,12/6/2022,Green Tea,24
+111,4/21/2022,Raw Pineapples,29
+112,6/3/2022,Canned Mango Juice,63
+113,5/4/2022,Cane Sugar,60
+114,5/8/2022,Ube Flavoring,92
+115,10/3/2022,Raw Strawberries,24
+116,2/23/2023,Black Tea,34
+117,9/2/2022,Raw Pineapples,89
+118,9/14/2022,Milk,1
+119,5/28/2022,Raw Pineapples,76
+120,3/2/2023,Tapioca,83
+121,8/9/2022,Black Tea,99
+122,10/18/2022,Ube Flavoring,57
+123,8/25/2022,Ube Flavoring,74
+124,3/22/2023,Cane Sugar,98
+125,2/16/2023,Black Tea,52
+126,12/25/2022,Green Tea,33
+127,11/19/2022,Green Tea,34
+128,7/20/2022,Tapioca,6
+129,6/1/2022,Ube Flavoring,80
+130,2/6/2023,Canned Coconut Juice,35
+131,12/26/2022,Milk,57
+132,3/12/2023,Ube Flavoring,45
+133,3/31/2023,Honey,8
+134,1/25/2023,Green Tea,7
+135,12/24/2022,Tapioca,67
+136,3/30/2023,Green Tea,96
+137,10/9/2022,Canned Mango Juice,98
+138,3/11/2023,Canned Coconut Juice,66
+139,11/1/2022,Tapioca,48
+140,3/10/2023,Lychee Tea,20
+141,1/30/2023,Cane Sugar,20
+142,11/16/2022,Tapioca,32
+143,1/13/2023,Raw Strawberries,52
+144,1/14/2023,Tapioca,94
+145,11/2/2022,Green Tea,1
+146,1/3/2023,Raw Pineapples,36
+147,7/2/2022,Raw Pineapples,43
+148,2/12/2023,Lychee Tea,82
+149,10/10/2022,Black Tea,46
+150,7/23/2022,Black Tea,83
+151,3/10/2023,Canned Coconut Juice,60
+152,11/29/2022,Cane Sugar,34
+153,6/1/2022,Milk,15
+154,12/15/2022,Milk,100
+155,5/2/2022,Green Tea,92
+156,7/28/2022,Milk,94
+157,1/7/2023,Ube Flavoring,67
+158,4/10/2023,Raw Strawberries,57
+159,2/8/2023,Cane Sugar,3
+160,3/1/2023,Tapioca,32
+161,1/1/2023,Canned Coconut Juice,96
+162,1/19/2023,Milk,89
+163,10/22/2022,Green Tea,9
+164,8/23/2022,Black Tea,6
+165,6/26/2022,Ube Flavoring,92
+166,1/31/2023,Honey,100
+167,4/18/2022,Canned Coconut Juice,99
+168,3/26/2023,Green Tea,98
+169,2/9/2023,Green Tea,22
+170,6/30/2022,Green Tea,30
+171,9/11/2022,Tapioca,1
+172,7/23/2022,Raw Pineapples,39
+173,3/22/2023,Lychee Tea,17
+174,9/16/2022,Black Tea,48
+175,1/25/2023,Honey,19
+176,11/15/2022,Canned Coconut Juice,18
+177,12/12/2022,Cane Sugar,78
+178,11/16/2022,Raw Strawberries,82
+179,9/30/2022,Raw Strawberries,44
+180,7/10/2022,Black Tea,47
+181,12/8/2022,Black Tea,38
+182,12/6/2022,Green Tea,36
+183,11/19/2022,Tapioca,63
+184,1/29/2023,Honey,5
+185,4/10/2023,Raw Strawberries,35
+186,8/10/2022,Milk,61
+187,12/12/2022,Tapioca,75
+188,9/2/2022,Milk,87
+189,9/27/2022,Milk,79
+190,1/3/2023,Raw Pineapples,37
+191,3/21/2023,Black Tea,59
+192,10/19/2022,Cane Sugar,78
+193,1/15/2023,Canned Coconut Juice,59
+194,4/18/2022,Tapioca,41
+195,5/19/2022,Cane Sugar,11
+196,12/31/2022,Raw Pineapples,70
+197,10/6/2022,Black Tea,39
+198,4/8/2023,Tapioca,25
+199,10/19/2022,Tapioca,71
+200,1/11/2023,Green Tea,33
