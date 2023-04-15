@@ -348,3 +348,20 @@ Error authenticating AxiosError: connect ECONNREFUSED 127.0.0.1:8080
     port: 8080
   }
 }
+ns:/page/edit# socket wbe4_5uLLRKSiG6qAAAP joined the room page:642d92bfea2f36397c4913ac
+ns:/# socket j3a2qjYoKaBPWORsAAAO joined the room app:642d92bfea2f36397c4913a9
+ns:/# socket j3a2qjYoKaBPWORsAAAO left the room app:642d92bfea2f36397c4913a9
+ns:/# socket j3a2qjYoKaBPWORsAAAO joined the room app:642d92bfea2f36397c4913a9
+ns:/# socket j3a2qjYoKaBPWORsAAAO left the room app:642d92bfea2f36397c4913a9
+ns:/page/edit # socket wbe4_5uLLRKSiG6qAAAP left the room page:642d92bfea2f36397c4913ac
+ns:/# socket bZkkNznwqOeacZR_AAAR joined the room app:642d92bfea2f36397c4913a9
+ns:/# socket bZkkNznwqOeacZR_AAAR left the room app:642d92bfea2f36397c4913a9
+ns:/# socket bZkkNznwqOeacZR_AAAR joined the room app:642d92bfea2f36397c4913a9
+Load environment configuration
+RTS version v1.9.13 running at http://localhost:8091
+ns:/# socket ZnRvxbu-kQwiyFM_AAAB joined the room app:642d92bfea2f36397c4913a9
+ns:/page/edit# socket YiDDqdemDMw5JKa4AAAC joined the room page:642d92bfea2f36397c4913ac
+ns:/page/edit # socket YiDDqdemDMw5JKa4AAAC left the room page:642d92bfea2f36397c4913ac
+ns:/page/edit# socket YiDDqdemDMw5JKa4AAAC joined the room page:6438173604c9ca347d2d9515-main
+ns:/# socket ZnRvxbu-kQwiyFM_AAAB left the room app:642d92bfea2f36397c4913a9
+ns:/# socket ZnRvxbu-kQwiyFM_AAAB joined the room app:642d92bfea2f36397c4913a9
