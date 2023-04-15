@@ -1,14 +1,14 @@
-1586:C 29 Mar 2023 14:54:21.769 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1586:C 29 Mar 2023 14:54:21.769 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1586, just started
-1586:C 29 Mar 2023 14:54:21.769 # Configuration loaded
-1586:M 29 Mar 2023 14:54:21.770 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+1621:C 15 Apr 2023 22:50:48.516 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1621:C 15 Apr 2023 22:50:48.516 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1621, just started
+1621:C 15 Apr 2023 22:50:48.516 # Configuration loaded
+1621:M 15 Apr 2023 22:50:48.519 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
                 _._                                                  
            _.-``__ ''-._                                             
       _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
   .-`` .-```.  ```\/    _.,_ ''-._                                   
  (    '      ,       .-`  | `,    )     Running in standalone mode
  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1586
+ |    `-._   `._    /     _.-'    |     PID: 1621
   `-._    `-._  `-./  _.-'    _.-'                                   
  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
  |    `-._`-._        _.-'_.-'    |           http://redis.io        
@@ -20,393 +20,67 @@
           `-._        _.-'                                           
               `-.__.-'                                               
 
-1586:M 29 Mar 2023 14:54:21.788 # Server initialized
-1586:M 29 Mar 2023 14:54:21.788 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1586:M 29 Mar 2023 14:54:21.790 * Ready to accept connections
-1586:signal-handler (1680102810) Received SIGTERM scheduling shutdown...
-1586:M 29 Mar 2023 15:13:31.085 # User requested shutdown...
-1586:M 29 Mar 2023 15:13:31.085 * Saving the final RDB snapshot before exiting.
-1586:M 29 Mar 2023 15:13:31.093 * DB saved on disk
-1586:M 29 Mar 2023 15:13:31.093 * Removing the pid file.
-1586:M 29 Mar 2023 15:13:31.093 # Redis is now ready to exit, bye bye...
-1346:C 29 Mar 2023 15:14:21.302 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1346:C 29 Mar 2023 15:14:21.302 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1346, just started
-1346:C 29 Mar 2023 15:14:21.302 # Configuration loaded
-1346:M 29 Mar 2023 15:14:21.303 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1346
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1346:M 29 Mar 2023 15:14:21.306 # Server initialized
-1346:M 29 Mar 2023 15:14:21.306 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1346:M 29 Mar 2023 15:14:21.309 * DB loaded from disk: 0.003 seconds
-1346:M 29 Mar 2023 15:14:21.309 * Ready to accept connections
-1346:signal-handler (1680102984) Received SIGTERM scheduling shutdown...
-1346:M 29 Mar 2023 15:16:25.009 # User requested shutdown...
-1346:M 29 Mar 2023 15:16:25.009 * Saving the final RDB snapshot before exiting.
-1346:M 29 Mar 2023 15:16:25.013 * DB saved on disk
-1346:M 29 Mar 2023 15:16:25.013 * Removing the pid file.
-1346:M 29 Mar 2023 15:16:25.013 # Redis is now ready to exit, bye bye...
-1344:C 29 Mar 2023 15:16:43.107 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1344:C 29 Mar 2023 15:16:43.108 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1344, just started
-1344:C 29 Mar 2023 15:16:43.108 # Configuration loaded
-1344:M 29 Mar 2023 15:16:43.108 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1344
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1344:M 29 Mar 2023 15:16:43.111 # Server initialized
-1344:M 29 Mar 2023 15:16:43.111 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1344:M 29 Mar 2023 15:16:43.113 * DB loaded from disk: 0.002 seconds
-1344:M 29 Mar 2023 15:16:43.113 * Ready to accept connections
-1344:M 29 Mar 2023 15:18:02.975 * 1 changes in 15 seconds. Saving...
-1344:M 29 Mar 2023 15:18:02.975 * Background saving started by pid 1635
-1635:C 29 Mar 2023 15:18:02.983 * DB saved on disk
-1635:C 29 Mar 2023 15:18:02.983 * RDB: 0 MB of memory used by copy-on-write
-1344:M 29 Mar 2023 15:18:03.077 * Background saving terminated with success
-1344:signal-handler (1680103193) Received SIGTERM scheduling shutdown...
-1344:M 29 Mar 2023 15:19:53.219 # User requested shutdown...
-1344:M 29 Mar 2023 15:19:53.219 * Saving the final RDB snapshot before exiting.
-1344:M 29 Mar 2023 15:19:53.224 * DB saved on disk
-1344:M 29 Mar 2023 15:19:53.224 * Removing the pid file.
-1344:M 29 Mar 2023 15:19:53.224 # Redis is now ready to exit, bye bye...
-1344:C 30 Mar 2023 15:11:30.147 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1344:C 30 Mar 2023 15:11:30.147 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1344, just started
-1344:C 30 Mar 2023 15:11:30.147 # Configuration loaded
-1344:M 30 Mar 2023 15:11:30.148 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1344
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1344:M 30 Mar 2023 15:11:30.156 # Server initialized
-1344:M 30 Mar 2023 15:11:30.156 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1344:M 30 Mar 2023 15:11:30.161 * DB loaded from disk: 0.004 seconds
-1344:M 30 Mar 2023 15:11:30.161 * Ready to accept connections
-1344:signal-handler (1680227318) Received SIGTERM scheduling shutdown...
-1344:M 31 Mar 2023 01:48:38.314 # User requested shutdown...
-1344:M 31 Mar 2023 01:48:38.314 * Saving the final RDB snapshot before exiting.
-1344:M 31 Mar 2023 01:48:38.324 * DB saved on disk
-1344:M 31 Mar 2023 01:48:38.324 * Removing the pid file.
-1344:M 31 Mar 2023 01:48:38.324 # Redis is now ready to exit, bye bye...
-1346:C 05 Apr 2023 09:37:16.259 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1346:C 05 Apr 2023 09:37:16.259 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1346, just started
-1346:C 05 Apr 2023 09:37:16.259 # Configuration loaded
-1346:M 05 Apr 2023 09:37:16.260 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1346
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1346:M 05 Apr 2023 09:37:16.268 # Server initialized
-1346:M 05 Apr 2023 09:37:16.268 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1346:M 05 Apr 2023 09:37:16.273 * DB loaded from disk: 0.004 seconds
-1346:M 05 Apr 2023 09:37:16.273 * Ready to accept connections
-1346:M 05 Apr 2023 09:38:19.753 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 09:38:19.753 * Background saving started by pid 1625
-1625:C 05 Apr 2023 09:38:19.760 * DB saved on disk
-1625:C 05 Apr 2023 09:38:19.761 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 09:38:19.854 * Background saving terminated with success
-1346:M 05 Apr 2023 09:38:35.027 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 09:38:35.028 * Background saving started by pid 1659
-1659:C 05 Apr 2023 09:38:35.034 * DB saved on disk
-1659:C 05 Apr 2023 09:38:35.035 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 09:38:35.128 * Background saving terminated with success
-1344:C 05 Apr 2023 15:12:11.630 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1344:C 05 Apr 2023 15:12:11.630 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1344, just started
-1344:C 05 Apr 2023 15:12:11.630 # Configuration loaded
-1344:M 05 Apr 2023 15:12:11.631 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1344
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1344:M 05 Apr 2023 15:12:11.633 # Server initialized
-1344:M 05 Apr 2023 15:12:11.634 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1344:M 05 Apr 2023 15:12:11.638 * DB loaded from disk: 0.004 seconds
-1344:M 05 Apr 2023 15:12:11.638 * Ready to accept connections
-1344:M 05 Apr 2023 15:14:42.333 * 1 changes in 15 seconds. Saving...
-1344:M 05 Apr 2023 15:14:42.333 * Background saving started by pid 1717
-1717:C 05 Apr 2023 15:14:42.341 * DB saved on disk
-1717:C 05 Apr 2023 15:14:42.341 * RDB: 0 MB of memory used by copy-on-write
-1344:M 05 Apr 2023 15:14:42.434 * Background saving terminated with success
-1344:M 05 Apr 2023 15:14:58.008 * 1 changes in 15 seconds. Saving...
-1344:M 05 Apr 2023 15:14:58.008 * Background saving started by pid 1736
-1736:C 05 Apr 2023 15:14:58.015 * DB saved on disk
-1736:C 05 Apr 2023 15:14:58.015 * RDB: 0 MB of memory used by copy-on-write
-1344:M 05 Apr 2023 15:14:58.109 * Background saving terminated with success
-1344:M 05 Apr 2023 15:15:14.082 * 1 changes in 15 seconds. Saving...
-1344:M 05 Apr 2023 15:15:14.083 * Background saving started by pid 1759
-1759:C 05 Apr 2023 15:15:14.090 * DB saved on disk
-1759:C 05 Apr 2023 15:15:14.091 * RDB: 0 MB of memory used by copy-on-write
-1344:M 05 Apr 2023 15:15:14.184 * Background saving terminated with success
-1346:C 05 Apr 2023 15:17:09.799 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1346:C 05 Apr 2023 15:17:09.799 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1346, just started
-1346:C 05 Apr 2023 15:17:09.799 # Configuration loaded
-1346:M 05 Apr 2023 15:17:09.800 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1346
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1346:M 05 Apr 2023 15:17:09.803 # Server initialized
-1346:M 05 Apr 2023 15:17:09.803 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1346:M 05 Apr 2023 15:17:09.807 * DB loaded from disk: 0.004 seconds
-1346:M 05 Apr 2023 15:17:09.807 * Ready to accept connections
-1346:M 05 Apr 2023 15:18:14.991 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:18:14.991 * Background saving started by pid 1626
-1626:C 05 Apr 2023 15:18:15.004 * DB saved on disk
-1626:C 05 Apr 2023 15:18:15.008 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:18:15.091 * Background saving terminated with success
-1346:M 05 Apr 2023 15:18:31.066 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:18:31.066 * Background saving started by pid 1640
-1640:C 05 Apr 2023 15:18:31.073 * DB saved on disk
-1640:C 05 Apr 2023 15:18:31.073 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:18:31.167 * Background saving terminated with success
-1346:M 05 Apr 2023 15:19:21.515 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:19:21.516 * Background saving started by pid 1682
-1682:C 05 Apr 2023 15:19:21.538 * DB saved on disk
-1682:C 05 Apr 2023 15:19:21.540 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:19:21.618 * Background saving terminated with success
-1346:M 05 Apr 2023 15:19:37.095 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:19:37.095 * Background saving started by pid 1703
-1703:C 05 Apr 2023 15:19:37.103 * DB saved on disk
-1703:C 05 Apr 2023 15:19:37.104 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:19:37.196 * Background saving terminated with success
-1346:M 05 Apr 2023 15:24:41.947 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:24:41.947 * Background saving started by pid 1964
-1964:C 05 Apr 2023 15:24:41.954 * DB saved on disk
-1964:C 05 Apr 2023 15:24:41.955 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:24:42.048 * Background saving terminated with success
-1346:M 05 Apr 2023 15:24:58.023 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:24:58.024 * Background saving started by pid 1992
-1992:C 05 Apr 2023 15:24:58.030 * DB saved on disk
-1992:C 05 Apr 2023 15:24:58.031 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:24:58.125 * Background saving terminated with success
-1346:M 05 Apr 2023 15:25:14.002 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:25:14.002 * Background saving started by pid 2014
-2014:C 05 Apr 2023 15:25:14.012 * DB saved on disk
-2014:C 05 Apr 2023 15:25:14.013 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:25:14.102 * Background saving terminated with success
-1346:M 05 Apr 2023 15:25:39.826 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:25:39.827 * Background saving started by pid 2033
-2033:C 05 Apr 2023 15:25:39.836 * DB saved on disk
-2033:C 05 Apr 2023 15:25:39.837 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:25:39.927 * Background saving terminated with success
-1346:M 05 Apr 2023 15:27:02.030 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:27:02.031 * Background saving started by pid 2112
-2112:C 05 Apr 2023 15:27:02.037 * DB saved on disk
-2112:C 05 Apr 2023 15:27:02.038 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:27:02.131 * Background saving terminated with success
-1346:M 05 Apr 2023 15:27:18.023 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:27:18.024 * Background saving started by pid 2126
-2126:C 05 Apr 2023 15:27:18.031 * DB saved on disk
-2126:C 05 Apr 2023 15:27:18.031 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:27:18.124 * Background saving terminated with success
-1346:M 05 Apr 2023 15:27:34.009 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:27:34.010 * Background saving started by pid 2141
-2141:C 05 Apr 2023 15:27:34.014 * DB saved on disk
-2141:C 05 Apr 2023 15:27:34.015 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:27:34.110 * Background saving terminated with success
-1346:M 05 Apr 2023 15:27:50.094 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:27:50.095 * Background saving started by pid 2165
-2165:C 05 Apr 2023 15:27:50.102 * DB saved on disk
-2165:C 05 Apr 2023 15:27:50.103 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:27:50.195 * Background saving terminated with success
-1346:M 05 Apr 2023 15:28:20.544 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:28:20.544 * Background saving started by pid 2192
-2192:C 05 Apr 2023 15:28:20.549 * DB saved on disk
-2192:C 05 Apr 2023 15:28:20.550 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:28:20.645 * Background saving terminated with success
-1346:M 05 Apr 2023 15:29:06.765 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:29:06.765 * Background saving started by pid 2232
-2232:C 05 Apr 2023 15:29:06.770 * DB saved on disk
-2232:C 05 Apr 2023 15:29:06.771 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:29:06.866 * Background saving terminated with success
-1346:M 05 Apr 2023 15:29:22.035 * 1 changes in 15 seconds. Saving...
-1346:M 05 Apr 2023 15:29:22.035 * Background saving started by pid 2246
-2246:C 05 Apr 2023 15:29:22.043 * DB saved on disk
-2246:C 05 Apr 2023 15:29:22.043 * RDB: 0 MB of memory used by copy-on-write
-1346:M 05 Apr 2023 15:29:22.136 * Background saving terminated with success
-1346:C 13 Apr 2023 14:49:27.305 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1346:C 13 Apr 2023 14:49:27.305 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1346, just started
-1346:C 13 Apr 2023 14:49:27.305 # Configuration loaded
-1346:M 13 Apr 2023 14:49:27.306 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1346
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1346:M 13 Apr 2023 14:49:27.313 # Server initialized
-1346:M 13 Apr 2023 14:49:27.313 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1346:M 13 Apr 2023 14:49:27.318 * DB loaded from disk: 0.004 seconds
-1346:M 13 Apr 2023 14:49:27.318 * Ready to accept connections
-1346:M 13 Apr 2023 14:50:13.228 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:50:13.229 * Background saving started by pid 1609
-1609:C 13 Apr 2023 14:50:13.256 * DB saved on disk
-1609:C 13 Apr 2023 14:50:13.257 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:50:13.330 * Background saving terminated with success
-1346:M 13 Apr 2023 14:50:29.000 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:50:29.000 * Background saving started by pid 1641
-1641:C 13 Apr 2023 14:50:29.008 * DB saved on disk
-1641:C 13 Apr 2023 14:50:29.008 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:50:29.101 * Background saving terminated with success
-1346:M 13 Apr 2023 14:51:07.962 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:51:07.963 * Background saving started by pid 1669
-1669:C 13 Apr 2023 14:51:07.970 * DB saved on disk
-1669:C 13 Apr 2023 14:51:07.970 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:51:08.064 * Background saving terminated with success
-1346:M 13 Apr 2023 14:51:24.032 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:51:24.032 * Background saving started by pid 1683
-1683:C 13 Apr 2023 14:51:24.087 * DB saved on disk
-1683:C 13 Apr 2023 14:51:24.087 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:51:24.133 * Background saving terminated with success
-1346:M 13 Apr 2023 14:51:40.076 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:51:40.076 * Background saving started by pid 1710
-1710:C 13 Apr 2023 14:51:40.084 * DB saved on disk
-1710:C 13 Apr 2023 14:51:40.084 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:51:40.177 * Background saving terminated with success
-1346:M 13 Apr 2023 14:52:13.072 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:52:13.073 * Background saving started by pid 1758
-1758:C 13 Apr 2023 14:52:13.078 * DB saved on disk
-1758:C 13 Apr 2023 14:52:13.079 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:52:13.174 * Background saving terminated with success
-1346:M 13 Apr 2023 14:52:29.047 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:52:29.048 * Background saving started by pid 1785
-1785:C 13 Apr 2023 14:52:29.056 * DB saved on disk
-1785:C 13 Apr 2023 14:52:29.056 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:52:29.149 * Background saving terminated with success
-1346:M 13 Apr 2023 14:52:45.001 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:52:45.001 * Background saving started by pid 1802
-1802:C 13 Apr 2023 14:52:45.011 * DB saved on disk
-1802:C 13 Apr 2023 14:52:45.011 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:52:45.102 * Background saving terminated with success
-1346:M 13 Apr 2023 14:53:01.077 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:53:01.077 * Background saving started by pid 1822
-1822:C 13 Apr 2023 14:53:01.085 * DB saved on disk
-1822:C 13 Apr 2023 14:53:01.086 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:53:01.178 * Background saving terminated with success
-1346:M 13 Apr 2023 14:53:17.035 * 1 changes in 15 seconds. Saving...
-1346:M 13 Apr 2023 14:53:17.035 * Background saving started by pid 1838
-1838:C 13 Apr 2023 14:53:17.042 * DB saved on disk
-1838:C 13 Apr 2023 14:53:17.043 * RDB: 0 MB of memory used by copy-on-write
-1346:M 13 Apr 2023 14:53:17.136 * Background saving terminated with success
-1346:C 15 Apr 2023 16:45:37.976 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1346:C 15 Apr 2023 16:45:37.976 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1346, just started
-1346:C 15 Apr 2023 16:45:37.976 # Configuration loaded
-1346:M 15 Apr 2023 16:45:37.977 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 1346
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-              `-.__.-'                                               
-
-1346:M 15 Apr 2023 16:45:37.990 # Server initialized
-1346:M 15 Apr 2023 16:45:37.991 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1346:M 15 Apr 2023 16:45:38.001 * DB loaded from disk: 0.010 seconds
-1346:M 15 Apr 2023 16:45:38.001 * Ready to accept connections
+1621:M 15 Apr 2023 22:50:48.527 # Server initialized
+1621:M 15 Apr 2023 22:50:48.527 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1621:M 15 Apr 2023 22:50:48.527 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1621:M 15 Apr 2023 22:50:48.528 * Ready to accept connections
+1621:M 15 Apr 2023 22:51:52.012 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:51:52.015 * Background saving started by pid 1919
+1919:C 15 Apr 2023 22:51:52.036 * DB saved on disk
+1919:C 15 Apr 2023 22:51:52.037 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:51:52.122 * Background saving terminated with success
+1621:M 15 Apr 2023 22:55:06.071 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:55:06.071 * Background saving started by pid 2104
+2104:C 15 Apr 2023 22:55:06.088 * DB saved on disk
+2104:C 15 Apr 2023 22:55:06.089 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:55:06.172 * Background saving terminated with success
+1621:M 15 Apr 2023 22:55:22.022 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:55:22.023 * Background saving started by pid 2130
+2130:C 15 Apr 2023 22:55:22.037 * DB saved on disk
+2130:C 15 Apr 2023 22:55:22.038 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:55:22.123 * Background saving terminated with success
+1621:M 15 Apr 2023 22:55:38.067 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:55:38.068 * Background saving started by pid 2145
+2145:C 15 Apr 2023 22:55:38.081 * DB saved on disk
+2145:C 15 Apr 2023 22:55:38.082 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:55:38.168 * Background saving terminated with success
+1621:M 15 Apr 2023 22:55:54.013 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:55:54.014 * Background saving started by pid 2160
+2160:C 15 Apr 2023 22:55:54.026 * DB saved on disk
+2160:C 15 Apr 2023 22:55:54.027 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:55:54.114 * Background saving terminated with success
+1621:M 15 Apr 2023 22:56:10.059 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:56:10.060 * Background saving started by pid 2175
+2175:C 15 Apr 2023 22:56:10.074 * DB saved on disk
+2175:C 15 Apr 2023 22:56:10.075 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:56:10.160 * Background saving terminated with success
+1621:M 15 Apr 2023 22:56:26.005 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:56:26.006 * Background saving started by pid 2189
+2189:C 15 Apr 2023 22:56:26.019 * DB saved on disk
+2189:C 15 Apr 2023 22:56:26.020 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:56:26.106 * Background saving terminated with success
+1621:M 15 Apr 2023 22:56:42.052 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:56:42.053 * Background saving started by pid 2204
+2204:C 15 Apr 2023 22:56:42.065 * DB saved on disk
+2204:C 15 Apr 2023 22:56:42.066 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:56:42.153 * Background saving terminated with success
+1621:M 15 Apr 2023 22:57:01.405 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:57:01.406 * Background saving started by pid 2219
+2219:C 15 Apr 2023 22:57:01.418 * DB saved on disk
+2219:C 15 Apr 2023 22:57:01.419 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:57:01.506 * Background saving terminated with success
+1621:M 15 Apr 2023 22:57:17.050 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:57:17.051 * Background saving started by pid 2234
+2234:C 15 Apr 2023 22:57:17.063 * DB saved on disk
+2234:C 15 Apr 2023 22:57:17.065 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:57:17.151 * Background saving terminated with success
+1621:M 15 Apr 2023 22:57:33.096 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:57:33.096 * Background saving started by pid 2249
+2249:C 15 Apr 2023 22:57:33.113 * DB saved on disk
+2249:C 15 Apr 2023 22:57:33.114 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:57:33.197 * Background saving terminated with success
+1621:M 15 Apr 2023 22:57:49.042 * 1 changes in 15 seconds. Saving...
+1621:M 15 Apr 2023 22:57:49.043 * Background saving started by pid 2263
+2263:C 15 Apr 2023 22:57:49.059 * DB saved on disk
+2263:C 15 Apr 2023 22:57:49.060 * RDB: 0 MB of memory used by copy-on-write
+1621:M 15 Apr 2023 22:57:49.144 * Background saving terminated with success
