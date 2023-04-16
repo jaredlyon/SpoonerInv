@@ -1,9 +1,8 @@
-# db creation:
-# create database SpoonerInv;
-#
+create database SpoonerInv;
+
 # show databases;
-#
-# use SpoonerInv;
+
+use SpoonerInv;
 
 # db deletion:
 # drop database SpoonerInv;
