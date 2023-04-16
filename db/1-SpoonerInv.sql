@@ -1,5 +1,5 @@
-drop schema if exists `SpoonderInv`;
-create schema if not exists `SpoonderInv`;
+drop schema if exists `SpoonerInv`;
+create schema if not exists `SpoonerInv`;
 
 use SpoonerInv;
 
