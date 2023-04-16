@@ -1,13 +1,8 @@
-create database SpoonerInv;
-
-# show databases;
+drop schema if exists `SpoonderInv`;
+create schema if not exists `SpoonderInv`;
 
 use SpoonerInv;
 
-# db deletion:
-# drop database SpoonerInv;
-
-# create tables w/ attributes
 create table if not exists Ingredient
 (
     ingredient_id   int primary key,
