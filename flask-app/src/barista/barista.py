@@ -170,5 +170,5 @@ def get_next_order():
 
     jsonify(json_data)
 
-    return json_data[0]['next_id']
+    return str(json_data[0]['next_id'])
     
