@@ -8,7 +8,7 @@ flush privileges;
 
 create table if not exists Ingredient
 (
-    ingredient_id   int primary key,
+    ingredient_id   int AUTO_INCREMENT primary key,
     name            varchar(50)        not null,
     quantity        int                not null,
     expiration_date date               not null
@@ -16,7 +16,7 @@ create table if not exists Ingredient
 
 create table if not exists Stock
 (
-    stock_id        int primary key,
+    stock_id        int AUTO_INCREMENT primary key,
     order_date_time datetime           not null,
     name            varchar(50)        not null,
     quantity        int                not null
@@ -24,7 +24,7 @@ create table if not exists Stock
 
 create table if not exists Supplier
 (
-    supplier_id int primary key,
+    supplier_id int AUTO_INCREMENT primary key,
     name        varchar(50) unique not null,
     street      varchar(50)        not null,
     city        varchar(50)        not null,
@@ -33,14 +33,14 @@ create table if not exists Supplier
 
 create table if not exists Customer
 (
-    customer_id    int primary key,
+    customer_id    int AUTO_INCREMENT primary key,
     loyalty_points int,
     free_drink     boolean not null
 );
 
 create table if not exists Employee
 (
-    employee_id int primary key,
+    employee_id int AUTO_INCREMENT primary key,
     phone       varchar(12),
     email       varchar(50),
     first_name  varchar(25),
@@ -51,12 +51,12 @@ create table if not exists Employee
 create table if not exists Region
 (
     name       varchar(50) unique not null,
-    region_id  int primary key
+    region_id  int AUTO_INCREMENT primary key
 );
 
 create table if not exists Store
 (
-    store_id  int primary key,
+    store_id  int AUTO_INCREMENT primary key,
     hours     varchar(100),
     region_id int                not null,
     street varchar(75),
@@ -67,7 +67,7 @@ create table if not exists Store
 
 create table if not exists `Order`
 (
-    order_id    int primary key,
+    order_id    int primary key AUTO_INCREMENT,
     total_price float not null,
     store_id    int   not null,
     customer_id int   not null
@@ -75,7 +75,7 @@ create table if not exists `Order`
 
 create table if not exists Drink
 (
-    drink_id  int primary key,
+    drink_id  int primary key AUTO_INCREMENT,
     size      char  not null,
     sugar_lvl varchar(5),
     ice_lvl   varchar(15),
