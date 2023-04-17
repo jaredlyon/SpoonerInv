@@ -33,7 +33,7 @@ def create_order():
 
 # Creates a new drink within a given order
 # localhost:8001/b/CreateDrink
-@barista.route('/CreateDrink', methods=['POST'])
+@barista.route('/CreateDrink', methods=['POST', 'PUT'])
 def create_drink():
 
     the_data = request.json
