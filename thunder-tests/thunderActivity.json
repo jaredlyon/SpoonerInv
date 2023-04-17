@@ -11,8 +11,6 @@
     "modified": "2023-04-17T22:59:31.273Z",
     "headers": [],
     "params": [],
-    "headers": [],
-    "params": [],
     "tests": []
   },
   {
@@ -32,6 +30,48 @@
       "raw": "{\r\n  \"size\" : \"M\",\r\n  \"sugar_lvl\" : \"70%\",\r\n  \"ice_lvl\" : \"Regular\",\r\n  \"price\" : 8.88,\r\n  \"order_id\" : 1\r\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "a52132b3-42b6-4640-8c90-bde0bd882b2d",
+    "colId": "history",
+    "containerId": "",
+    "name": "get store id of employee",
+    "url": "localhost:8001/b/employeeStore/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-17T23:51:07.007Z",
+    "modified": "2023-04-17T23:51:07.007Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e9f27e40-625b-4104-a92f-d30c0a9a73de",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/deleteOrder/1",
+    "url": "localhost:8001/b/deleteOrder/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-17T23:53:38.854Z",
+    "modified": "2023-04-17T23:53:38.854Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0da2dd08-a924-47e9-8e48-dee0e5aa3cba",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/deleteOrder/1",
+    "url": "localhost:8001/b/deleteOrder/1",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-04-17T23:53:45.299Z",
+    "modified": "2023-04-17T23:53:45.299Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]
