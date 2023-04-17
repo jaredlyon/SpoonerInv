@@ -2,6 +2,11 @@ from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
 
+# My ideas for what the front-end of this page should look like
+# - Table displaying information about all the ingredients used in the store
+# - Form to update a given ingredient's supply and expiration date
+# - Separate forms to delete and add orders
+# - 
 
 barista = Blueprint('barista', __name__)
 
@@ -38,8 +43,10 @@ def delete_order():
     return
 
 # I may have realized I fucked up the data creation for ingredients
+# I accidentally mistaken ingredients for stock
+# We should also have around five or so ingredients (since they should be unique) instead of 100
 
-# TODO: Updates the supply of ingredients available
+# TODO: Updates the supply and expiration date of ingredients available
 @barista.route('/updateIngredient', methods=['PUT'])
 def update_ingredient():
     return
