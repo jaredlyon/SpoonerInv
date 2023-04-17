@@ -152,7 +152,7 @@ def delete_order(orderID):
 @barista.route('/Order', methods=['GET'])
 def get_next_order():
     query = '''
-        SELECT COUNT(DISTINCT order_id) as next_id
+        SELECT MAX(order_id) as next_id
         FROM `Order`;
     '''
     cursor = db.get_db().cursor()
