@@ -40,5 +40,132 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "479e4dcf-c80a-440c-87f0-50e3579d813e",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "employee/id",
+    "url": "localhost:8001/m/employee/2",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-17T23:01:29.109Z",
+    "modified": "2023-04-17T23:01:29.109Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8abdd4dd-bb74-4abb-bdef-41af9deb67c1",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "hireEmployee",
+    "url": "localhost:8001/m/hireEmployee",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-17T23:01:41.800Z",
+    "modified": "2023-04-17T23:04:34.642Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"4088211520\",\n  \"email\": \"jaredalyon@gmail.com\",\n  \"first_name\": \"Jared\",\n  \"last_name\": \"Lyon\",\n  \"store_id\": 2\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b8ec55d6-49e9-495e-b736-3442594172f1",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "updateEmployee",
+    "url": "localhost:8001/m/updateEmployee",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2023-04-17T23:05:04.241Z",
+    "modified": "2023-04-17T23:06:30.995Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"employee_id\": 1,\n  \"phone\": \"4088211520\",\n  \"email\": \"jaredalyon@gmail.com\",\n  \"first_name\": \"Jared\",\n  \"last_name\": \"Lyon\",\n  \"store_id\": 2\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e2c07bd3-d6fd-4480-ba9d-ac8715ec108f",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "fireEmployee/id",
+    "url": "localhost:8001/m/fireEmployee/2",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2023-04-17T23:06:02.592Z",
+    "modified": "2023-04-17T23:06:44.660Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b0090737-511b-4596-88ba-5d7c8c9e1499",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "stock/id",
+    "url": "localhost:8001/m/stock/2",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-04-17T23:06:54.583Z",
+    "modified": "2023-04-17T23:07:48.502Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e7b93985-416c-4e4e-b54d-9dee8a99d679",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "updateStock",
+    "url": "localhost:8001/m/updateStock",
+    "method": "PUT",
+    "sortNum": 60000,
+    "created": "2023-04-17T23:07:52.939Z",
+    "modified": "2023-04-17T23:10:42.169Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"stock_id\": 2,\n  \"order_date_time\": \"2012-04-21T18:25:43-05:00\",\n  \"name\": \"bingus\",\n  \"quantity\": 254\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1f5e99b4-0dc0-48b7-a681-4644e5117d00",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "store/id",
+    "url": "localhost:8001/m/store/2",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2023-04-17T23:10:58.671Z",
+    "modified": "2023-04-17T23:11:14.169Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "27ec27c4-276f-434c-9b7f-6cc630da4538",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "regionalStores/2",
+    "url": "localhost:8001/m/regionalStores/2",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-04-17T23:11:30.416Z",
+    "modified": "2023-04-17T23:11:43.004Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
