@@ -1,29 +1,63 @@
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-# My ideas for what the front-end of this page should look like
-# - Table displaying information about all the ingredients used in the store
-# - Form to update a given ingredient's supply and expiration date
-# - Separate forms to delete and add orders
-
-# These ideas I'm a little more unsure about:
-# - User can specify what order they want to see and pull up all the drinks in that order in a table
-# - From there, they can use forms to add, delete, and update drinks
-
 barista = Blueprint('barista', __name__)
 
-# # TODO: Creates a new order with new drinks
-# # Must specify customer name, store name, and all drinks associated
-# @barista.route('/createOrder', methods=['POST'])
-# def create_order():
-#     return
+# Creates a new order with new drinks
+# localhost:8001/b/CreateOrder
+@barista.route('/CreateOrder', methods=['POST'])
+def create_order():
+    the_data = request.json
 
-# # TODO: Creates a new drink within a given order
-# # Must specify size, price, sugar level, ice level, and maybe order ID
-# @barista.route('/createDrink', methods=['POST'])
-# def create_drink():
-#     return
+    total_price = the_data['total_price']
+    store_id = the_data['store_id']
+    customer_id = the_data['customer_id']
+
+    current_app.logger.info(the_data)
+
+    the_query = 'INSERT INTO `Order`(total_price, store_id, customer_id) VALUES ('
+    the_query += str(total_price) + ', '
+    the_query += str(store_id) + ', '
+    the_query += str(customer_id) + ')'
+
+    current_app.logger.info(the_query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(the_query)
+    db.get_db().commit()
+
+    return "success!"
+
+# Creates a new drink within a given order
+# localhost:8001/b/CreateDrink
+@barista.route('/CreateDrink', methods=['POST'])
+def create_drink():
+
+    the_data = request.json
+
+    size = the_data['size']
+    sugar_lvl = the_data['sugar_lvl']
+    ice_lvl = the_data['ice_lvl']
+    price = the_data['price']
+    order_id = the_data['order_id']
+
+    current_app.logger.info(the_data)
+
+    the_query = 'INSERT INTO Drink(size,sugar_lvl,ice_lvl,price,order_id) VALUES ("'
+    the_query += size + '", "'
+    the_query += sugar_lvl + '", "'
+    the_query += ice_lvl + '", '
+    the_query += str(price) + ', '
+    the_query += str(order_id) + ')'
+
+    current_app.logger.info(the_query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(the_query)
+    db.get_db().commit()
+
+    return "success!"
 
 # Gets all of the drinks associated with an order
 # localhost:8001/b/Order/<orderID>
@@ -44,6 +78,7 @@ def get_order(orderID):
 
 
 # Returns all ingredients at the store of a given employee
+# localhost:8001/b/Ingredient/<baristaID>
 @barista.route('/Ingredient/<baristaID>', methods=['GET'])
 def get_ingredient(baristaID):
     query = '''
@@ -128,7 +163,7 @@ def get_next_order():
     column_headers = [x[0] for x in cursor.description]
     theData = cursor.fetchall()
 
-    # zip headers and data togetehr into dictionaryand append to json data dict.
+    # zip headers and data together into dictionaryand append to json data dict.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
