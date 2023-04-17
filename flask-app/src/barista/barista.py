@@ -26,7 +26,7 @@ def create_drink():
     return
 
 # TODO: Gets all of the drinks associated with an order
-@barista.route('/order', methods=['GET'])
+@barista.route('/order/<drinkID>', methods=['GET'])
 def get_order():
     return
 
