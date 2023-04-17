@@ -142,7 +142,7 @@ def update_stock():
     return "success!"
 
 # TODO: Get a store's information
-@manager.route('/Store/<storeID>', methods=['GET'])
+@manager.route('/store/<storeID>', methods=['GET'])
 def get_store(storeID):
     cursor = db.get_db().cursor()
     cursor.execute('select * from Store S where S.store_id = {0};'.format(storeID))
