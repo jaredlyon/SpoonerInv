@@ -30,7 +30,8 @@ barista = Blueprint('barista', __name__)
 @barista.route('/Order/<orderID>', methods=['GET'])
 def get_order(orderID):
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM `Order` O JOIN Drink D USING(order_id) WHERE O.order_id = {0};'.format(orderID))
+    cursor.execute('''SELECT D.drink_id as 'Drink ID', D.ice_lvl as 'Ice Level', D.price as 'Price', size as 'Size', sugar_lvl as 'Sugar Level'
+                   FROM `Order` O JOIN Drink D USING(order_id) WHERE O.order_id = {0};'''.format(orderID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -78,7 +79,7 @@ def get_ingredient(baristaID):
 #     return
 
 # Deletes a given drink
-@barista.route('/deleteDrink/<drinkID>', methods=['DELETE'])
+@barista.route('/DeleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
     query = '''
         DELETE
@@ -90,10 +91,17 @@ def delete_drink(drinkID):
     return "success!"
     
 
-# # TODO: Deletes a given order including all of its associated drinks (assuming it cascades)
-# @barista.route('/deleteOrder', methods=['DELETE'])
-# def delete_order():
-#     return
+# Deletes a given order including all of its associated drinks (assuming it cascades)
+@barista.route('/DeleteOrder/<orderID>', methods=['DELETE'])
+def delete_order(orderID):
+    query = '''
+        DELETE
+        FROM `Order`
+        WHERE order_id = {0};
+    '''.format(orderID)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    return "success!"
 
 # # I may have realized I fucked up the data creation for ingredients
 # # I accidentally mistaken ingredients for stock
@@ -102,9 +110,4 @@ def delete_drink(drinkID):
 # # TODO: Updates the supply and expiration date of ingredients available
 # @barista.route('/updateIngredient', methods=['PUT'])
 # def update_ingredient():
-#     return
-
-# # TODO: Gets all of the ingredients used in the shop and any other revalent information
-# @barista.route('/ingredients', methods=['GET'])
-# def get_ingredients():
 #     return
