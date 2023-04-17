@@ -35,7 +35,8 @@ create table if not exists Customer
 (
     customer_id    int AUTO_INCREMENT primary key,
     loyalty_points int,
-    free_drink     boolean not null
+    free_drink     boolean not null,
+    username       varchar(50) unique
 );
 
 create table if not exists Employee
