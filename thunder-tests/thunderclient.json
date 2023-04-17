@@ -145,11 +145,11 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "get store's ingredients",
-    "url": "localhost:8001/b/ingredient/1",
+    "url": "localhost:8001/b/Ingredient/1",
     "method": "GET",
     "sortNum": 10000,
     "created": "2023-04-17T23:09:48.877Z",
-    "modified": "2023-04-17T23:27:04.511Z",
+    "modified": "2023-04-17T23:09:48.877Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -159,11 +159,11 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "delete drink",
-    "url": "localhost:8001/b/deleteDrink/107",
+    "url": "localhost:8001/b/DeleteDrink/107",
     "method": "DELETE",
     "sortNum": 20000,
     "created": "2023-04-17T23:10:57.587Z",
-    "modified": "2023-04-17T23:27:09.602Z",
+    "modified": "2023-04-17T23:10:57.587Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -233,12 +233,12 @@
     "method": "POST",
     "sortNum": 50000,
     "created": "2023-04-17T23:12:58.993Z",
-    "modified": "2023-04-17T23:23:50.634Z",
+    "modified": "2023-04-17T23:47:40.799Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"total_price\" : 12.99,\n  \"store_id\" : 1,\n  \"customer_id\" : 1\n}",
+      "raw": "{\n  \"store_id\" : 1,\n  \"customer_id\" : 1\n}",
       "form": []
     },
     "tests": []

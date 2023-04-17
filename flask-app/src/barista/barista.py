@@ -12,14 +12,13 @@ barista = Blueprint('barista', __name__)
 def create_order():
     the_data = request.json
 
-    total_price = the_data['total_price']
     store_id = the_data['store_id']
     customer_id = the_data['customer_id']
 
     current_app.logger.info(the_data)
 
     the_query = 'INSERT INTO `Order`(total_price, store_id, customer_id) VALUES ('
-    the_query += str(total_price) + ', '
+    the_query += str(0) + ', '
     the_query += str(store_id) + ', '
     the_query += str(customer_id) + ')'
 
