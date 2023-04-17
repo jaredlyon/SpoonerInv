@@ -55,8 +55,14 @@ def create_drink():
 
     current_app.logger.info(the_query)
 
+    # update the total price of the order
+    order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price) + ' WHERE order_id = ' + str(order_id) + ';'
+
+    current_app.logger.info(order_query)
+
     cursor = db.get_db().cursor()
     cursor.execute(the_query)
+    cursor.execute(order_query)
     db.get_db().commit()
 
     return "success!"
