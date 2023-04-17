@@ -145,11 +145,11 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "get store's ingredients",
-    "url": "localhost:8001/b/Ingredient/1",
+    "url": "localhost:8001/b/ingredient/1",
     "method": "GET",
     "sortNum": 10000,
     "created": "2023-04-17T23:09:48.877Z",
-    "modified": "2023-04-17T23:09:48.877Z",
+    "modified": "2023-04-17T23:57:13.845Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -279,6 +279,34 @@
       "raw": "{\n  \"size\" : \"M\",\n  \"sugar_lvl\" : \"70%\",\n  \"ice_lvl\" : \"Regular\",\n  \"price\" : 8.88,\n  \"order_id\" : 1\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "2d10d192-0b0e-424e-b644-102fe2d13e7a",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "get store id of employee",
+    "url": "localhost:8001/b/employeeStore/1",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-04-17T23:52:06.461Z",
+    "modified": "2023-04-17T23:52:06.461Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ded7ca87-e3ed-4285-b63b-9ee51b701848",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "delete order",
+    "url": "localhost:8001/b/deleteOrder/1",
+    "method": "DELETE",
+    "sortNum": 90000,
+    "created": "2023-04-17T23:53:57.270Z",
+    "modified": "2023-04-17T23:53:57.270Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]

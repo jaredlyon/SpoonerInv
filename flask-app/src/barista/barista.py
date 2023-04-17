@@ -7,7 +7,6 @@ from src import db
 barista = Blueprint('barista', __name__)
 
 # Creates a new order with new drinks
-# localhost:8001/b/CreateOrder
 @barista.route('/createOrder', methods=['POST'])
 def create_order():
     the_data = request.json
@@ -31,7 +30,7 @@ def create_order():
     return "success!"
 
 # Creates a new drink within a given order
-# localhost:8001/b/CreateDrink
+# Also updates the corresponding order's total price!!
 @barista.route('/createDrink', methods=['POST', 'PUT'])
 def create_drink():
 
@@ -67,7 +66,6 @@ def create_drink():
     return "success!"
 
 # Gets all of the drinks associated with an order
-# localhost:8001/b/Order/<orderID>
 @barista.route('/order/<orderID>', methods=['GET'])
 def get_order(orderID):
     cursor = db.get_db().cursor()
@@ -85,7 +83,6 @@ def get_order(orderID):
 
 
 # Returns all ingredients at the store of a given employee
-# localhost:8001/b/Ingredient/<baristaID>
 @barista.route('/ingredient/<baristaID>', methods=['GET'])
 def get_ingredient(baristaID):
     query = '''
@@ -116,7 +113,6 @@ def get_ingredient(baristaID):
 
 
 # Changes size, price, sugar level, and/or ice level of a drink in a given order
-# localhost:8001/b/EditDrink/<drinkID>
 @barista.route('/editDrink/<drinkID>', methods=['PUT'])
 def update_drink(drinkID):
     
@@ -147,7 +143,6 @@ def update_drink(drinkID):
     return "success!"
 
 # Deletes a given drink
-# localhost:8001/b/DeleteDrink/<drinkID>
 @barista.route('/deleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
     query = '''
@@ -161,7 +156,6 @@ def delete_drink(drinkID):
     
 
 # Deletes a given order including all of its associated drinks (assuming it cascades)
-# localhost:8001/b/DeleteOrder/<orderID>
 @barista.route('/deleteOrder/<orderID>', methods=['DELETE'])
 def delete_order(orderID):
     query = '''
