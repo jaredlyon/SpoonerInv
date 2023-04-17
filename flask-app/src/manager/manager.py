@@ -37,14 +37,21 @@ def get_employees(storeID):
 # def update_employee():
 #     return
 
-# # TODO: Find and delete an employee
-# @manager.route('/fireEmployee', methods=['DELETE'])
-# def delete_employee():
-#     return
+# TODO: Find and delete an employee
+@manager.route('/fireEmployee/<employeeID>', methods=['DELETE'])
+def delete_employee(employeeID):
+    query = '''
+        DELETE
+        FROM Employee
+        WHERE drink_id = {0};
+    '''.format(employeeID)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    return "success!"
 
 # TODO: Get all the stocks available for the store to use and their revalent information
 @manager.route('/stock/<storeID>', methods=['GET'])
-def get_region(storeID):
+def get_stock(storeID):
     cursor = db.get_db().cursor()
     cursor.execute('select * from Stock join Store_Stock SS on Stock.stock_id = SS.stock_id join Store S on SS.store_id = S.store_id where S.store_id = {0};'.format(storeID))
     row_headers = [x[0] for x in cursor.description]
@@ -79,7 +86,7 @@ def get_store(storeID):
 
 # TODO: Get all stores from a region
 @manager.route('/regionalStores/<regionID>', methods=['GET'])
-def delete_employee(regionID):
+def get_region(regionID):
     cursor = db.get_db().cursor()
     cursor.execute('select * from Store join Region R on Store.region_id = R.region_id where R.region_id = {0};'.format(regionID))
     row_headers = [x[0] for x in cursor.description]
