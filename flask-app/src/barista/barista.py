@@ -171,4 +171,23 @@ def get_next_order():
     jsonify(json_data)
 
     return str(json_data[0]['next_id'] + 1)
-    
+
+# Gets the store ID of a given employee
+@barista.route('/employeeStore/<employeeID>', methods=['GET'])
+def get_employee_store(employeeID):
+    query = '''SELECT store_id from Store join Employee E on Store.store_id = E.store_id where Store.store_id = {0};'''.format(employeeID)
+        
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+
+    # fetchall the column headers and the nall the data from the cursor
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    # zip headers and data togetehr into dictionaryand append to json data dict.
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
