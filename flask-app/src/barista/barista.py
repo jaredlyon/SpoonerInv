@@ -87,7 +87,7 @@ def get_order(orderID):
 
 # Returns all ingredients at the store of a given employee
 # localhost:8001/b/Ingredient/<baristaID>
-@barista.route('/Ingredient/<baristaID>', methods=['GET'])
+@barista.route('/ingredient/<baristaID>', methods=['GET'])
 def get_ingredient(baristaID):
     query = '''
         SELECT DISTINCT I.name AS label, I.name as value
@@ -149,7 +149,7 @@ def update_drink(drinkID):
 
 # Deletes a given drink
 # localhost:8001/b/DeleteDrink/<drinkID>
-@barista.route('/DeleteDrink/<drinkID>', methods=['DELETE'])
+@barista.route('/deleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
     query = '''
         DELETE
