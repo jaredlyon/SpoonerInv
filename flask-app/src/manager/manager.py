@@ -2,6 +2,13 @@ from flask import Blueprint, request, jsonify, make_response
 import json
 from src import db
 
+# My ideas for what the front-end of this page should look like
+# - Table displaying information about all the stocks used in the store
+# - Form to update a given stock's supply and order by date
+
+# These ideas I'm a little more unsure about:
+# - User can specify which store they want to see all the employee information from and pull up in a table
+# - From there, they can use forms to add, delete, and update employees
 
 manager = Blueprint('manager', __name__)
 
@@ -35,3 +42,4 @@ def get_stocks():
 def update_stock():
     return
 
+# Not sure what other routes I can put but we have two more to go!
