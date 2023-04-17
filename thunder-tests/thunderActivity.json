@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< Updated upstream
     "_id": "e7187bd9-0d2e-445f-aeb3-a3df8c6c9778",
     "colId": "history",
     "containerId": "",
@@ -11,6 +12,24 @@
     "modified": "2023-04-17T22:59:31.273Z",
     "headers": [],
     "params": [],
+=======
+    "_id": "bf1edac7-5d12-4b03-9c66-69e81900574e",
+    "colId": "history",
+    "containerId": "",
+    "name": "edit existing drink",
+    "url": "localhost:8001/b/CreateDrink",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-17T23:09:14.024Z",
+    "modified": "2023-04-17T23:14:03.479Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"size\" : \"M\",\r\n  \"sugar_lvl\" : \"70%\",\r\n  \"ice_lvl\" : \"Regular\",\r\n  \"price\" : 8.88,\r\n  \"order_id\" : 1\r\n}",
+      "form": []
+    },
+>>>>>>> Stashed changes
     "tests": []
   }
 ]
