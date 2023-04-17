@@ -30,7 +30,7 @@ barista = Blueprint('barista', __name__)
 @barista.route('/Order/<orderID>', methods=['GET'])
 def get_order(orderID):
     cursor = db.get_db().cursor()
-    cursor.execute('''SELECT D.drink_id as 'Drink ID', D.ice_lvl as 'Ice Level', D.price as 'Price', size as 'Size', sugar_lvl as 'Sugar Level'
+    cursor.execute('''SELECT D.drink_id as 'DrinkID', D.ice_lvl as 'IceLevel', D.price as 'Price', size as 'Size', sugar_lvl as 'SugarLevel'
                    FROM `Order` O JOIN Drink D USING(order_id) WHERE O.order_id = {0};'''.format(orderID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
@@ -111,3 +111,25 @@ def delete_order(orderID):
 # @barista.route('/updateIngredient', methods=['PUT'])
 # def update_ingredient():
 #     return
+
+# Returns highest used order ID
+@barista.route('/Order', methods=['GET'])
+def get_next_order():
+    query = '''
+        SELECT COUNT(DISTINCT order_id) as next_id
+        FROM `Order`;
+    '''
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+
+    # fetchall the column headers and the nall the data from the cursor
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    # zip headers and data togetehr into dictionaryand append to json data dict.
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
