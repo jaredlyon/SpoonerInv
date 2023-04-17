@@ -68,7 +68,6 @@ def get_ingredient(baristaID):
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
-
     return jsonify(json_data)
 
 
@@ -78,10 +77,18 @@ def get_ingredient(baristaID):
 # def edit_drink():
 #     return
 
-# TODO: Deletes a given drink
-@barista.route('/deleteDrink/<drinkID>', method=['DELETE'])
+# Deletes a given drink
+@barista.route('/deleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
-    return
+    query = '''
+        DELETE
+        FROM Drink
+        WHERE drink_id = {0};
+    '''.format(drinkID)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    return "success!"
+    
 
 # # TODO: Deletes a given order including all of its associated drinks (assuming it cascades)
 # @barista.route('/deleteOrder', methods=['DELETE'])
