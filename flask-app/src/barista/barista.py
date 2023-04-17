@@ -2,6 +2,8 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
+# TODO: finish last update route and make order price a derived attribute from its drinks
+
 barista = Blueprint('barista', __name__)
 
 # Creates a new order with new drinks
@@ -109,6 +111,7 @@ def get_ingredient(baristaID):
 
 
 # Changes size, price, sugar level, and/or ice level of a drink in a given order
+# localhost:8001/b/EditDrink/<drinkID>
 @barista.route('/EditDrink/<drinkID>', methods=['PUT'])
 def update_drink(drinkID):
     
@@ -139,6 +142,7 @@ def update_drink(drinkID):
     return "success!"
 
 # Deletes a given drink
+# localhost:8001/b/DeleteDrink/<drinkID>
 @barista.route('/DeleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
     query = '''
@@ -152,6 +156,7 @@ def delete_drink(drinkID):
     
 
 # Deletes a given order including all of its associated drinks (assuming it cascades)
+# localhost:8001/b/DeleteOrder/<orderID>
 @barista.route('/DeleteOrder/<orderID>', methods=['DELETE'])
 def delete_order(orderID):
     query = '''
@@ -162,10 +167,6 @@ def delete_order(orderID):
     cursor = db.get_db().cursor()
     cursor.execute(query)
     return "success!"
-
-# # I may have realized I fucked up the data creation for ingredients
-# # I accidentally mistaken ingredients for stock
-# # We should also have around five or so ingredients (since they should be unique) instead of 100
 
 # # TODO: Updates the supply and expiration date of ingredients available
 # @barista.route('/updateIngredient', methods=['PUT'])
