@@ -108,10 +108,35 @@ def get_ingredient(baristaID):
 
 
 
-# # TODO: Changes size, price, sugar level, and/or ice level of a drink in a given order
-# @barista.route('/editDrink', methods=['PUT'])
-# def edit_drink():
-#     return
+# Changes size, price, sugar level, and/or ice level of a drink in a given order
+@barista.route('/EditDrink/<drinkID>', methods=['PUT'])
+def update_drink(drinkID):
+    
+    the_data = request.json
+
+    size = the_data['size']
+    sugar_lvl = the_data['sugar_lvl']
+    ice_lvl = the_data['ice_lvl']
+    price = the_data['price']
+    order_id = the_data['order_id']
+
+    current_app.logger.info(the_data)
+
+    the_query = 'UPDATE Drink SET '
+    the_query += 'size = "' + size + '", '
+    the_query += 'sugar_lvl = "' + sugar_lvl + '", '
+    the_query += 'ice_lvl = "' + ice_lvl + '", '
+    the_query += 'price = ' + str(price) + ', '
+    the_query += 'order_id =' + str(order_id) + ' '
+    the_query += 'WHERE drink_id = {0};'.format(drinkID)
+
+    current_app.logger.info(the_query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(the_query)
+    db.get_db().commit()
+
+    return "success!"
 
 # Deletes a given drink
 @barista.route('/DeleteDrink/<drinkID>', methods=['DELETE'])
