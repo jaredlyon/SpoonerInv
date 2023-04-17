@@ -196,12 +196,12 @@ def get_next_order():
 
     jsonify(json_data)
 
-    return str(json_data[0]['next_id'] + 1)
+    return str(json_data[0]['next_id'])
 
 # Gets the store ID of a given employee
 @barista.route('/employeeStore/<employeeID>', methods=['GET'])
 def get_employee_store(employeeID):
-    query = '''SELECT store_id from Store join Employee E on Store.store_id = E.store_id where Store.store_id = {0};'''.format(employeeID)
+    query = '''SELECT Store.store_id as store_id from Store join Employee E on Store.store_id = E.store_id where E.employee_id = {0};'''.format(employeeID)
         
     cursor = db.get_db().cursor()
     cursor.execute(query)
@@ -216,4 +216,6 @@ def get_employee_store(employeeID):
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
-    return jsonify(json_data)
+    jsonify(json_data)
+
+    return str(json_data[0]['store_id'])
