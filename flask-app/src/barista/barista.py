@@ -6,7 +6,10 @@ from src import db
 # - Table displaying information about all the ingredients used in the store
 # - Form to update a given ingredient's supply and expiration date
 # - Separate forms to delete and add orders
-# - 
+
+# These ideas I'm a little more unsure about:
+# - User can specify what order they want to see and pull up all the drinks in that order in a table
+# - From there, they can use forms to add, delete, and update drinks
 
 barista = Blueprint('barista', __name__)
 
@@ -52,6 +55,6 @@ def update_ingredient():
     return
 
 # TODO: Gets all of the ingredients used in the shop and any other revalent information
-@barista.route('/ingredient', methods=['GET'])
-def get_ingredient():
+@barista.route('/ingredients', methods=['GET'])
+def get_ingredients():
     return
