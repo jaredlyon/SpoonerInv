@@ -147,7 +147,8 @@ def delete_order(orderID):
 # def update_ingredient():
 #     return
 
-# Returns highest used order ID
+# Gets the count of distinct orders from the database
+# Returns the count as an integer
 @barista.route('/Order', methods=['GET'])
 def get_next_order():
     query = '''
@@ -167,4 +168,7 @@ def get_next_order():
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
-    return jsonify(json_data)
+    jsonify(json_data)
+
+    return json_data[0]['next_id']
+    
