@@ -87,24 +87,29 @@ create table if not exists Drink
 alter table Employee
     add CONSTRAINT fk_1_employee
         FOREIGN KEY (store_id) references Store (store_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE;
 
 alter table Store
     add CONSTRAINT fk_1_store
         FOREIGN KEY (region_id) references Region (region_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE;
 
 alter table `Order`
     add CONSTRAINT fk_1_order
         FOREIGN KEY (store_id) references Store (store_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
     add CONSTRAINT fk_2_order
         FOREIGN KEY (customer_id) references Customer (customer_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE;
 
 alter table Drink
     add CONSTRAINT fk_1_drink
         FOREIGN KEY (order_id) references `Order` (order_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE;
 
 # generate M:N relationship tables
@@ -113,8 +118,10 @@ create table if not exists Store_Stock
     store_id int not null,
     stock_id int not null,
     CONSTRAINT fk_1_store_stock FOREIGN KEY (store_id) references Store (store_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
     CONSTRAINT fk_2_store_stock FOREIGN KEY (stock_id) references Stock (stock_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE
 );
 
@@ -123,8 +130,10 @@ create table if not exists Drink_Recipe
     drink_id      int not null,
     ingredient_id int not null,
     CONSTRAINT fk_1_drink_recipe FOREIGN KEY (drink_id) references Drink (drink_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
     CONSTRAINT fk_2_drink_recipe FOREIGN KEY (ingredient_id) references Ingredient (ingredient_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE
 );
 
@@ -133,8 +142,10 @@ create table if not exists Ingredient_Recipe
     ingredient_id int not null,
     stock_id      int not null,
     CONSTRAINT fk_1_ingredient_recipe FOREIGN KEY (ingredient_id) references Ingredient (ingredient_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
     CONSTRAINT fk_2_ingredient_recipe FOREIGN KEY (stock_id) references Stock (stock_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE
 );
 
@@ -143,7 +154,9 @@ create table if not exists Stock_Order
     supplier_id int not null,
     stock_id    int not null,
     CONSTRAINT fk_1_stock_order FOREIGN KEY (supplier_id) references Supplier (supplier_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
     CONSTRAINT fk_2_stock_order FOREIGN KEY (stock_id) references Stock (stock_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE
 );

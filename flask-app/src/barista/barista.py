@@ -46,7 +46,7 @@ def get_order(orderID):
 @barista.route('/Ingredient/<baristaID>', methods=['GET'])
 def get_ingredient(baristaID):
     query = '''
-        SELECT DISTINCT I.name
+        SELECT DISTINCT I.name AS label, I.name as value
         FROM Ingredient I
         JOIN Ingredient_Recipe IR ON I.ingredient_id = IR.ingredient_id
         JOIN Stock S ON IR.stock_id = S.stock_id
@@ -78,10 +78,10 @@ def get_ingredient(baristaID):
 # def edit_drink():
 #     return
 
-# # TODO: Deletes a given drink from a given order
-# @barista.route('/deleteDrink', method=['DELETE'])
-# def delete_drink():
-#     return
+# TODO: Deletes a given drink
+@barista.route('/deleteDrink/<drinkID>', method=['DELETE'])
+def delete_drink(drinkID):
+    return
 
 # # TODO: Deletes a given order including all of its associated drinks (assuming it cascades)
 # @barista.route('/deleteOrder', methods=['DELETE'])
