@@ -29,8 +29,6 @@ def create_order():
 
     return "success!"
 
-#INSERT INTO `Order`(total_price, store_id, customer_id) VALUES (10.00, 1, 1)
-
 # Creates a new drink within a given order
 # localhost:8001/b/CreateDrink
 @barista.route('/CreateDrink', methods=['POST'])
