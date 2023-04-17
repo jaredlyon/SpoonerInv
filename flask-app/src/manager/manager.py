@@ -12,10 +12,20 @@ from src import db
 
 manager = Blueprint('manager', __name__)
 
-# # TODO: Get all the employees that work for a given store and their revalent information 
-# @manager.route('/employees', methods=['GET'])
-# def get_employees():
-#     return
+# TODO: Get all the employees that work for a given store and their revalent information 
+@manager.route('/employees/<storeID>', methods=['GET'])
+def get_employees(storeID):
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT * FROM `Employee` E JOIN Store S USING(store_id) WHERE E.store_id = {0};'.format(storeID))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
 
 # # TODO: Add a new employee to a given store, including their name, phone number, and email address
 # @manager.route('/hireEmployee', methods=['POST'])
@@ -32,14 +42,52 @@ manager = Blueprint('manager', __name__)
 # def delete_employee():
 #     return
 
-# # TODO: Get all the stocks available for the store to use and their revalent information
-# @manager.route('/stocks', methods=['GET'])
-# def get_stocks():
-#     return
+# TODO: Get all the stocks available for the store to use and their revalent information
+@manager.route('/stock/<storeID>', methods=['GET'])
+def get_region(storeID):
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Stock join Store_Stock SS on Stock.stock_id = SS.stock_id join Store S on SS.store_id = S.store_id where S.store_id = {0};'.format(storeID))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
 
 # # TODO: Update the quantity and order by date of a specified stock
 # @manager.route('/updateStock', methods=['PUT'])
 # def update_stock():
 #     return
 
-# # Not sure what other routes I can put but we have two more to go!
+# TODO: Get a store's information
+@manager.route('/store/<storeID>', methods=['GET'])
+def get_store(storeID):
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Store S where S.store_id = {0};'.format(storeID))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+# TODO: Get all stores from a region
+@manager.route('/regionalStores/<regionID>', methods=['GET'])
+def delete_employee(regionID):
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Store join Region R on Store.region_id = R.region_id where R.region_id = {0};'.format(regionID))
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
