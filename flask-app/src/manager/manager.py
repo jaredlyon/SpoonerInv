@@ -37,10 +37,17 @@ def get_employees(storeID):
 # def update_employee():
 #     return
 
-# # TODO: Find and delete an employee
-# @manager.route('/fireEmployee', methods=['DELETE'])
-# def delete_employee():
-#     return
+# TODO: Find and delete an employee
+@manager.route('/fireEmployee/<employeeID>', methods=['DELETE'])
+def delete_employee(employeeID):
+    query = '''
+        DELETE
+        FROM Employee
+        WHERE drink_id = {0};
+    '''.format(employeeID)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    return "success!"
 
 # TODO: Get all the stocks available for the store to use and their revalent information
 @manager.route('/stock/<storeID>', methods=['GET'])
