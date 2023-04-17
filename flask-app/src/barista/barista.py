@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
@@ -19,11 +19,37 @@ barista = Blueprint('barista', __name__)
 # def create_order():
 #     return
 
-# # TODO: Creates a new drink within a given order
-# # Must specify size, price, sugar level, ice level, and maybe order ID
-# @barista.route('/createDrink', methods=['POST'])
-# def create_drink():
-#     return
+# TODO: Creates a new drink within a given order
+# Must specify size, price, sugar level, ice level, and maybe order ID
+@barista.route('/CreateDrink', methods=['POST'])
+def create_drink():
+
+    the_data = request.json
+
+    size = the_data['size']
+    sugar_lvl = the_data['sugar_lvl']
+    ice_lvl = the_data['ice_lvl']
+    price = the_data['price']
+    order_id = the_data['order_id']
+
+    current_app.logger.info(the_data)
+
+    the_query = 'INSERT INTO Drink(size,sugar_lvl,ice_lvl,price,order_id) VALUES ("'
+    the_query += size + '", "'
+    the_query += sugar_lvl + '", "'
+    the_query += ice_lvl + '", '
+    the_query += str(price) + ', '
+    the_query += str(order_id) + ')'
+
+    current_app.logger.info(the_query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(the_query)
+    db.get_db().commit()
+
+    return "success!"
+
+#INSERT INTO Drink(size,sugar_lvl,ice_lvl,price,order_id) VALUES ('S','100%','light ice',5.84,1);
 
 # Gets all of the drinks associated with an order
 # localhost:8001/b/Order/<orderID>
@@ -128,7 +154,7 @@ def get_next_order():
     column_headers = [x[0] for x in cursor.description]
     theData = cursor.fetchall()
 
-    # zip headers and data togetehr into dictionaryand append to json data dict.
+    # zip headers and data together into dictionaryand append to json data dict.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
