@@ -41,7 +41,7 @@ def add_employee():
 
     current_app.logger.info(the_data)
 
-    the_query = 'INSERT INTO Employee(employee_id,phone,email,first_name,last_name,store_id) VALUES ("'
+    the_query = 'INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ("'
     the_query += phone + '", "'
     the_query += email + '", "'
     the_query += first_name + '", "'
