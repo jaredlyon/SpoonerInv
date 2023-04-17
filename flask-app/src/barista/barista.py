@@ -26,8 +26,8 @@ barista = Blueprint('barista', __name__)
 #     return
 
 # Gets all of the drinks associated with an order
-# localhost:8001/b/order/<orderID>
-@barista.route('/order/<orderID>', methods=['GET'])
+# localhost:8001/b/Order/<orderID>
+@barista.route('/Order/<orderID>', methods=['GET'])
 def get_order(orderID):
     cursor = db.get_db().cursor()
     cursor.execute('SELECT * FROM `Order` O JOIN Drink D USING(order_id) WHERE O.order_id = {0};'.format(orderID))
@@ -42,10 +42,36 @@ def get_order(orderID):
     return the_response
 
 
-# # TODO: Returns all ingredients
-# @barista.route('/Ingredient', methods=['GET'])
-# def get_ingredient():
-#     return
+# Returns all ingredients at the store of a given employee
+@barista.route('/Ingredient/<baristaID>', methods=['GET'])
+def get_ingredient(baristaID):
+    query = '''
+        SELECT DISTINCT I.name
+        FROM Ingredient I
+        JOIN Ingredient_Recipe IR ON I.ingredient_id = IR.ingredient_id
+        JOIN Stock S ON IR.stock_id = S.stock_id
+        JOIN Store_Stock SS ON S.stock_id = SS.stock_id
+        JOIN Store S2 ON SS.store_id = S2.store_id
+        JOIN Employee E ON S2.store_id = E.store_id
+        WHERE S2.store_id = {0};
+    '''.format(baristaID)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+
+    # fetchall the column headers and the nall the data from the cursor
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    # zip headers and data togetehr into dictionaryand append to json data dict.
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+
+    return jsonify(json_data)
+
+
 
 # # TODO: Changes size, price, sugar level, and/or ice level of a drink in a given order
 # @barista.route('/editDrink', methods=['PUT'])
