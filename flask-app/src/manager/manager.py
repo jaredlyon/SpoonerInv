@@ -2,17 +2,9 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-# My ideas for what the front-end of this page should look like
-# - Table displaying information about all the stocks used in the store
-# - Form to update a given stock's supply and order by date
-
-# These ideas I'm a little more unsure about:
-# - User can specify which store they want to see all the employee information from and pull up in a table
-# - From there, they can use forms to add, delete, and update employees
-
 manager = Blueprint('manager', __name__)
 
-# TODO: Get all the employees that work for a given store and their revalent information 
+# Get all the employees that work for a given store and their revalent information 
 @manager.route('/employee/<storeID>', methods=['GET'])
 def get_employees(storeID):
     cursor = db.get_db().cursor()
@@ -27,7 +19,7 @@ def get_employees(storeID):
     the_response.mimetype = 'application/json'
     return the_response
 
-# TODO: Add a new employee to a given store, including their name, phone number, and email address
+# Add a new employee to a given store, including their name, phone number, and email address
 @manager.route('/hireEmployee', methods=['POST'])
 def add_employee():
     
@@ -56,7 +48,7 @@ def add_employee():
 
     return "success!"
 
-# TODO: Update the information of a given employee, such as their name, phone number, and email address
+# Update the information of a given employee, such as their name, phone number, and email address
 @manager.route('updateEmployee', methods=['PUT'])
 def update_employee():
     
@@ -87,7 +79,7 @@ def update_employee():
 
     return "success!"
 
-# TODO: Find and delete an employee
+# Find and delete an employee
 @manager.route('/fireEmployee/<employeeID>', methods=['DELETE'])
 def delete_employee(employeeID):
     query = '''
@@ -99,7 +91,7 @@ def delete_employee(employeeID):
     cursor.execute(query)
     return "success!"
 
-# TODO: Get all the stocks available for the store to use and their revalent information
+# Get all the stocks available for the store to use and their revalent information
 @manager.route('/stock/<storeID>', methods=['GET'])
 def get_stock(storeID):
     cursor = db.get_db().cursor()
@@ -114,7 +106,7 @@ def get_stock(storeID):
     the_response.mimetype = 'application/json'
     return the_response
 
-# TODO: Update the quantity and order by date of a specified stock
+# Update the quantity and order by date of a specified stock
 @manager.route('/updateStock', methods=['PUT'])
 def update_stock():
     
@@ -141,7 +133,7 @@ def update_stock():
 
     return "success!"
 
-# TODO: Get a store's information
+# Get a store's information
 @manager.route('/store/<storeID>', methods=['GET'])
 def get_store(storeID):
     cursor = db.get_db().cursor()
@@ -156,7 +148,7 @@ def get_store(storeID):
     the_response.mimetype = 'application/json'
     return the_response
 
-# TODO: Get all stores from a region
+# Get all stores from a region
 @manager.route('/regionalStores/<regionID>', methods=['GET'])
 def get_region(regionID):
     cursor = db.get_db().cursor()
