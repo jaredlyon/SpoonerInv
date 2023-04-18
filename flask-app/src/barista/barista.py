@@ -136,9 +136,12 @@ def update_drink(drinkID):
     the_query += 'WHERE drink_id = {0};'.format(drinkID)
 
     current_app.logger.info(the_query)
+    
+    #order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price) + ' WHERE order_id = ' + str(order_id) + ';'
 
     cursor = db.get_db().cursor()
     cursor.execute(the_query)
+    #cursor.execute(order_query)
     db.get_db().commit()
 
     return "success!"
@@ -151,10 +154,15 @@ def delete_drink(drinkID):
         FROM Drink
         WHERE drink_id = {0};
     '''.format(drinkID)
+    
+    #order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price) + ' WHERE order_id = ' + str(order_id) + ';'
+    
     cursor = db.get_db().cursor()
     cursor.execute(query)
-    return "success!"
+    #cursor.execute(order_query)
     
+    db.get_db().commit()
+    return "success!"
 
 # Deletes a given order including all of its associated drinks (assuming it cascades)
 @barista.route('/deleteOrder/<orderID>', methods=['DELETE'])
@@ -166,6 +174,8 @@ def delete_order(orderID):
     '''.format(orderID)
     cursor = db.get_db().cursor()
     cursor.execute(query)
+    
+    db.get_db().commit()
     return "success!"
 
 # # TODO: Updates the supply and expiration date of ingredients available
