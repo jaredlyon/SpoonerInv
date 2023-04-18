@@ -15,6 +15,7 @@ def create_order():
     customer_id = the_data['customer_id']
 
     current_app.logger.info(the_data)
+    #comment so i can commit
 
     the_query = 'INSERT INTO `Order`(total_price, store_id, customer_id) VALUES ('
     the_query += str(0) + ', '
