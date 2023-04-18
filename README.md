@@ -26,4 +26,5 @@ The `db/` folder generates a custom MySQL database within a MySQL 8 container - 
 
 
 ... and results in the following database diagram:
-<img width="989" alt="Screen Shot 2023-04-17 at 8 24 15 PM" src="https://user-images.githubusercontent.com/29807461/232638070-21bf4b29-1eb6-4979-b02c-3be9ef44daf5.png">
+<img width="1169" alt="Screen Shot 2023-04-17 at 8 35 32 PM" src="https://user-images.githubusercontent.com/29807461/232639294-1d159d51-69b8-4f59-a973-0f61f78bb84c.png">
+
