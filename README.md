@@ -21,7 +21,7 @@ This app is designed to manage customer orders, stock orders, and ingredient pro
 
 ## Database Design
 
-The `db/` folder generates a custom MySQL database within a MySQL 8 container - this database is then populated using seed data also found in the `db/` folder. It's design follows this relational diagram:
+The `db/` folder generates a custom MySQL database within a MySQL 8 container - this database is then populated using seed data also found in the `db/` folder. Its design follows this relational diagram:
 <img width="1193" alt="Screen Shot 2023-04-17 at 8 25 24 PM" src="https://user-images.githubusercontent.com/29807461/232638201-9c0df65e-2b19-4968-a3d3-36dc70a1d94f.png">
 
 
