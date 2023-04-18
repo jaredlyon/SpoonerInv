@@ -11,11 +11,12 @@ barista = Blueprint('barista', __name__)
 def create_order():
     the_data = request.json
 
-    store_id = the_data['store_id']
+    employee_id = the_data['employee_id']
     customer_id = the_data['customer_id']
 
     current_app.logger.info(the_data)
     #comment so i can commit
+    store_id = get_employee_store(employee_id)
 
     the_query = 'INSERT INTO `Order`(total_price, store_id, customer_id) VALUES ('
     the_query += str(0) + ', '
