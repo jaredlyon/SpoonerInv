@@ -146,6 +146,29 @@ def update_drink(drinkID):
 
     return "success!"
 
+@barista.route('/editOrder', methods=['PUT'])
+def update_order():
+    the_data = request.json
+
+    order_id = the_data["Edit_Order_Id"]
+    customer_id = the_data['Edit_Order_Cust_Id']
+    total_price = the_data['Edit_Order_Total_Price']
+
+    current_app.logger.info(the_data)
+
+    the_query += 'Updat `Order` SET '
+    the_query += 'customer_id = "' + customer_id + '", '
+    the_query += 'total_price = "' + total_price + ' '
+    the_query += 'WHERE order_id = "' + order_id + '";'
+
+    current_app.logger.info(the_query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(the_query)
+    db.get_db().commit()
+
+    return "success!"
+
 # Deletes a given drink
 @barista.route('/deleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
@@ -229,3 +252,42 @@ def get_employee_store(employeeID):
     jsonify(json_data)
 
     return str(json_data[0]['store_id'])
+
+@barista.route('/orderCust/<orderID>', methods=['GET'])
+def get_order_custid(orderID):
+    query = '''SELECT * FROM `Order` WHERE order_id = {0};'''.format(orderID)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    
+    jsonify(json_data)
+    
+    return str(json_data[0]['customer_id'])
+
+
+@barista.route('/orderPrice/<orderID>', methods=['GET'])
+def get_order_total_price(orderID):
+    query = '''SELECT * FROM `Order` WHERE order_id = {0};'''.format(orderID)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    
+    jsonify(json_data)
+
+    return str(json_data[0]['total_price'])

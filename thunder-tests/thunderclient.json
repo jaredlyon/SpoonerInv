@@ -308,5 +308,52 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "31a251b1-65a8-4647-b6ac-ca88e21c1873",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "get order cust id",
+    "url": "localhost:8001/b/orderCust/220",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2023-04-18T15:38:38.927Z",
+    "modified": "2023-04-18T15:58:10.436Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a11cf311-281a-438a-9efa-3b5a37b0076b",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "get order total price",
+    "url": "localhost:8001/b/orderPrice/220",
+    "method": "GET",
+    "sortNum": 110000,
+    "created": "2023-04-18T15:56:08.052Z",
+    "modified": "2023-04-18T15:58:01.707Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "df52fc88-3470-4c68-b047-b96e9ff60e7c",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "edit order cust and price",
+    "url": "localhost:8001/b/editOrder",
+    "method": "PUT",
+    "sortNum": 120000,
+    "created": "2023-04-18T16:22:48.672Z",
+    "modified": "2023-04-18T16:41:17.852Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Edit_Order_Id\": \"225\",\n  \"Edit_Order_Cust_Id\": \"12\",\n  \"Edit_Order_Total_Price\": 20\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
