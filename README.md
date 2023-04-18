@@ -17,4 +17,4 @@ This repository is already configured to properly build:
 
 ## Project Overview
 
-This app is designed to manage customer orders, stock orders, and ingredient production across multiple boba stores organized by region. An app was created via AppSmith - it contains two sample pages for use from a barista's standpoint as well as a manager's standpoint. This app can be found (here)<https://github.com/jaredlyon/SpoonerApp>.
+This app is designed to manage customer orders, stock orders, and ingredient production across multiple boba stores organized by region. An app was created via AppSmith - it contains two sample pages for use from a barista's standpoint as well as a manager's standpoint. This app can be found [here](https://github.com/jaredlyon/SpoonerApp).
