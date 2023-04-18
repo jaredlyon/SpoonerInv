@@ -18,3 +18,11 @@ This repository is already configured to properly build:
 ## Project Overview
 
 This app is designed to manage customer orders, stock orders, and ingredient production across multiple boba stores organized by region. An app was created via AppSmith - it contains two sample pages for use from a barista's standpoint as well as a manager's standpoint. This app can be found [here](https://github.com/jaredlyon/SpoonerApp).
+
+## Database Design
+
+The `db/` folder generates a custom MySQL database within a MySQL 8 container - this database is then populated using seed data also found in the `db/` folder. It's design follows this relational diagram:
+[Relational Diagram.pdf](https://github.com/jaredlyon/SpoonerInv/files/11256746/Relational.Diagram.pdf)
+
+... and results in the following database diagram:
+<img width="989" alt="Screen Shot 2023-04-17 at 8 24 15 PM" src="https://user-images.githubusercontent.com/29807461/232638070-21bf4b29-1eb6-4979-b02c-3be9ef44daf5.png">
