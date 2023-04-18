@@ -29,7 +29,8 @@ def create_order():
     cursor.execute(the_query)
     db.get_db().commit()
 
-    return "success!"
+    current_order = get_next_order()
+    return current_order
 
 # Creates a new drink within a given order
 # Also updates the corresponding order's total price!!
@@ -120,11 +121,10 @@ def update_drink(drinkID):
     
     the_data = request.json
 
-    size = the_data['size']
-    sugar_lvl = the_data['sugar_lvl']
-    ice_lvl = the_data['ice_lvl']
-    price = the_data['price']
-    order_id = the_data['order_id']
+    size = the_data['Size']
+    sugar_lvl = the_data['SugarLevel']
+    ice_lvl = the_data['IceLevel']
+    price = the_data['Price']
 
     current_app.logger.info(the_data)
 
@@ -132,8 +132,7 @@ def update_drink(drinkID):
     the_query += 'size = "' + size + '", '
     the_query += 'sugar_lvl = "' + sugar_lvl + '", '
     the_query += 'ice_lvl = "' + ice_lvl + '", '
-    the_query += 'price = ' + str(price) + ', '
-    the_query += 'order_id =' + str(order_id) + ' '
+    the_query += 'price = ' + str(price) + ' '
     the_query += 'WHERE drink_id = {0};'.format(drinkID)
 
     current_app.logger.info(the_query)

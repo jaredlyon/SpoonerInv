@@ -252,12 +252,12 @@
     "method": "PUT",
     "sortNum": 60000,
     "created": "2023-04-17T23:13:47.950Z",
-    "modified": "2023-04-17T23:23:54.346Z",
+    "modified": "2023-04-18T00:54:39.529Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"size\" : \"M\",\n  \"sugar_lvl\" : \"70%\",\n  \"ice_lvl\" : \"Regular\",\n  \"price\" : 8.88,\n  \"order_id\" : 1\n}",
+      "raw": "{\n  \"Size\" : \"M\",\n  \"SugarLevel\" : \"70%\",\n  \"IceLevel\" : \"Regular\",\n  \"Price\" : 8.88\n}",
       "form": []
     },
     "tests": []
