@@ -335,7 +335,7 @@ def get_drink_info(drinkID):
 def get_other_employees(employeeID):
     store_id = get_employee_store(employeeID)
 
-    query = ''' SELECT phone as "Phone", email as "Email", first_name as "First Name", last_name as "Last Name", employee_id as "EmployeeID" 
+    query = '''SELECT phone as "Phone", email as "Email", first_name as "First Name", last_name as "Last Name", employee_id as "EmployeeID" 
             FROM Employee
             Where store_id = {0};'''.format(store_id)
     
@@ -353,7 +353,7 @@ def get_other_employees(employeeID):
     return jsonify(json_data)
 
 #edit the inofrmation of the employee currently using the route
-@barista.route('/editInformation/<employeeID>', methods=['Put'])
+@barista.route('/editInformation/<employeeID>', methods=['PUT'])
 def updater_info(employeeID):
     the_data = request.json
 

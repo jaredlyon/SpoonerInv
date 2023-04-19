@@ -46,11 +46,11 @@
     "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
     "containerId": "",
     "name": "employee/id",
-    "url": "localhost:8001/m/employee/2",
+    "url": "localhost:8001/m/employee/1",
     "method": "GET",
     "sortNum": 10000,
     "created": "2023-04-17T23:01:29.109Z",
-    "modified": "2023-04-17T23:01:29.109Z",
+    "modified": "2023-04-19T18:04:45.972Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -105,11 +105,11 @@
     "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
     "containerId": "",
     "name": "fireEmployee/id",
-    "url": "localhost:8001/m/fireEmployee/2",
+    "url": "localhost:8001/m/fireEmployee/1",
     "method": "DELETE",
     "sortNum": 40000,
     "created": "2023-04-17T23:06:02.592Z",
-    "modified": "2023-04-17T23:06:44.660Z",
+    "modified": "2023-04-19T18:06:56.138Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -119,11 +119,11 @@
     "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
     "containerId": "",
     "name": "stock/id",
-    "url": "localhost:8001/m/stock/2",
+    "url": "localhost:8001/m/stock/1",
     "method": "GET",
     "sortNum": 50000,
     "created": "2023-04-17T23:06:54.583Z",
-    "modified": "2023-04-17T23:07:48.502Z",
+    "modified": "2023-04-19T18:07:24.089Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -220,20 +220,6 @@
     ]
   },
   {
-    "_id": "1f5e99b4-0dc0-48b7-a681-4644e5117d00",
-    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
-    "containerId": "",
-    "name": "store/id",
-    "url": "localhost:8001/m/store/2",
-    "method": "GET",
-    "sortNum": 70000,
-    "created": "2023-04-17T23:10:58.671Z",
-    "modified": "2023-04-17T23:11:14.169Z",
-    "headers": [],
-    "params": [],
-    "tests": []
-  },
-  {
     "_id": "27ec27c4-276f-434c-9b7f-6cc630da4538",
     "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
     "containerId": "",
@@ -242,7 +228,7 @@
     "method": "GET",
     "sortNum": 80000,
     "created": "2023-04-17T23:11:30.416Z",
-    "modified": "2023-04-17T23:11:43.004Z",
+    "modified": "2023-04-19T18:09:03.687Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -784,7 +770,7 @@
     "_id": "0344117e-5b5d-42bd-9784-05c455bccada",
     "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
     "containerId": "",
-    "name": "addStore to region",
+    "name": "addStore/",
     "url": "localhost:8001/m/addStore",
     "method": "POST",
     "sortNum": 90000,
@@ -805,5 +791,217 @@
         "value": "INSERT INTO `Store`(hours, region_id, street, city, zip, name, store_id) VALUES ('example list of hours', 1, '1000 Bascom Ave', 'san jose', 95125, 'Teaspoon Campbell', 1000)"
       }
     ]
+  },
+  {
+    "_id": "b58d4e8c-e75b-4129-b5de-cab37a4b2a8b",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "employee/id 2",
+    "url": "localhost:8001/m/employee/2",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2023-04-19T18:04:31.781Z",
+    "modified": "2023-04-19T18:04:31.781Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c3d66a9b-ea98-43e4-80be-6ea528925c77",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "hireEmployee 2",
+    "url": "localhost:8001/m/hireEmployee",
+    "method": "POST",
+    "sortNum": 25000,
+    "created": "2023-04-19T18:06:05.510Z",
+    "modified": "2023-04-19T18:06:23.576Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"4088211521\",\n  \"email\": \"bingus@gmail.com\",\n  \"first_name\": \"bing\",\n  \"last_name\": \"us\",\n  \"store_id\": 1\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "contains",
+        "value": "INSERT INTO `Store`(hours, region_id, street, city, zip, name, store_id) VALUES ('example list of hours', 1, '1000 Bascom Ave', 'san jose', 95125, 'Teaspoon Campbell', 1000)"
+      }
+    ]
+  },
+  {
+    "_id": "7e90fffc-dbd7-43c6-8c96-f68556955e63",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "updateEmployee 2",
+    "url": "localhost:8001/m/updateEmployee",
+    "method": "PUT",
+    "sortNum": 35000,
+    "created": "2023-04-19T18:06:27.077Z",
+    "modified": "2023-04-19T18:06:48.300Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"employee_id\": 2,\n  \"phone\": \"3094862342\",\n  \"email\": \"bingus@gmail.com\",\n  \"first_name\": \"big\",\n  \"last_name\": \"us\",\n  \"store_id\": 3\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2e6ae230-fa1d-467c-aa71-397f00557516",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "fireEmployee/id 2",
+    "url": "localhost:8001/m/fireEmployee/2",
+    "method": "DELETE",
+    "sortNum": 45000,
+    "created": "2023-04-19T18:06:57.883Z",
+    "modified": "2023-04-19T18:07:06.573Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8e701d38-86b5-4164-bb32-0298dfb563fd",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "stock/id 2",
+    "url": "localhost:8001/m/stock/2",
+    "method": "GET",
+    "sortNum": 55000,
+    "created": "2023-04-19T18:07:15.272Z",
+    "modified": "2023-04-19T18:07:15.272Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "93c601fb-9a91-400d-b144-e08a021ba834",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "updateStock 2",
+    "url": "localhost:8001/m/updateStock",
+    "method": "PUT",
+    "sortNum": 65000,
+    "created": "2023-04-19T18:07:30.848Z",
+    "modified": "2023-04-19T18:07:46.893Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"stock_id\": 3,\n  \"order_date_time\": \"2012-04-21T18:25:43-05:00\",\n  \"name\": \"dilapidated\",\n  \"quantity\": 254\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1fa3c267-9244-4aaa-a592-e188c42811ec",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "regionalStores/2 2",
+    "url": "localhost:8001/m/regionalStores/1",
+    "method": "GET",
+    "sortNum": 85000,
+    "created": "2023-04-19T18:08:55.177Z",
+    "modified": "2023-04-19T18:08:55.177Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1388c739-03d0-4634-80b4-503ca5247b60",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "addStore/ 2",
+    "url": "localhost:8001/m/addStore",
+    "method": "POST",
+    "sortNum": 100000,
+    "created": "2023-04-19T18:09:18.709Z",
+    "modified": "2023-04-19T18:09:51.780Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"hours\": \"example list of hours\",\n  \"region_id\": 2,\n  \"street\": \"1000 Ducky Ave\",\n  \"city\": \"san bernardino\",\n  \"zip\": 95125,\n  \"name\": \"Teaspoon Crave\",\n  \"store_id\": 2302\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-code",
+        "custom": "",
+        "action": "contains",
+        "value": "INSERT INTO `Store`(hours, region_id, street, city, zip, name, store_id) VALUES ('example list of hours', 1, '1000 Bascom Ave', 'san jose', 95125, 'Teaspoon Campbell', 1000)"
+      }
+    ]
+  },
+  {
+    "_id": "45dda608-18ff-4fed-8bf6-b5b684183c2b",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "localhost:8001/b/otherEmployees/1",
+    "url": "localhost:8001/b/otherEmployees/2",
+    "method": "GET",
+    "sortNum": 150000,
+    "created": "2023-04-19T18:12:26.694Z",
+    "modified": "2023-04-19T18:14:31.302Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "90454fe2-484e-425a-810d-0c968658c7af",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "localhost:8001/b/editInformation/1",
+    "url": "localhost:8001/b/editInformation/1",
+    "method": "PUT",
+    "sortNum": 160000,
+    "created": "2023-04-19T18:14:14.419Z",
+    "modified": "2023-04-19T18:14:14.419Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"1111111111\",\n  \"email\": \"test@example.com\",\n  \"first_name\": \"blejh\",\n  \"last_name\": \"hackck\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a3769a4a-2202-456d-a74d-68ef145b4686",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "localhost:8001/b/otherEmployees/1 Copy",
+    "url": "localhost:8001/b/otherEmployees/1",
+    "method": "GET",
+    "sortNum": 155000,
+    "created": "2023-04-19T18:14:24.016Z",
+    "modified": "2023-04-19T18:14:24.016Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "99167c98-b48f-4c1a-ada8-22f2a9e57a2a",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "localhost:8001/b/editInformation/1 2",
+    "url": "localhost:8001/b/editInformation/1",
+    "method": "PUT",
+    "sortNum": 170000,
+    "created": "2023-04-19T18:14:34.145Z",
+    "modified": "2023-04-19T18:14:47.406Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"2222222222\",\n  \"email\": \"test@example.com\",\n  \"first_name\": \"wef\",\n  \"last_name\": \"hackwfewefck\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

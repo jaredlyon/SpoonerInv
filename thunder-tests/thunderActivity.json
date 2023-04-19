@@ -134,5 +134,76 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "b7639117-039f-4225-913e-8818586f165f",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/otherEmployees/2",
+    "url": "localhost:8001/b/otherEmployees/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-19T18:12:06.416Z",
+    "modified": "2023-04-19T18:12:06.416Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3e10e558-8fc8-48c5-9a66-500a82e309e0",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/m/editInformation/1",
+    "url": "localhost:8001/m/editInformation/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-19T18:13:54.123Z",
+    "modified": "2023-04-19T18:13:54.123Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"1111111111\",\n  \"email\": \"test@example.com\",\n  \"first_name\": \"blejh\",\n  \"last_name\": \"hackck\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e11b6897-6d66-476c-af32-84dc01af8599",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/editInformation/1",
+    "url": "localhost:8001/b/editInformation/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-19T18:14:00.151Z",
+    "modified": "2023-04-19T18:14:00.151Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"1111111111\",\n  \"email\": \"test@example.com\",\n  \"first_name\": \"blejh\",\n  \"last_name\": \"hackck\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "da0d5c0b-a8d8-484e-b085-058bbbfe98e2",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/editInformation/1",
+    "url": "localhost:8001/b/editInformation/1",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-04-19T18:14:04.522Z",
+    "modified": "2023-04-19T18:14:04.522Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"phone\": \"1111111111\",\n  \"email\": \"test@example.com\",\n  \"first_name\": \"blejh\",\n  \"last_name\": \"hackck\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
