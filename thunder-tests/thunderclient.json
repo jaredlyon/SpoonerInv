@@ -270,16 +270,16 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "edit existing drink 1",
-    "url": "localhost:8001/b/editDrink/438",
+    "url": "localhost:8001/b/editDrink/105",
     "method": "PUT",
     "sortNum": 60000,
     "created": "2023-04-17T23:13:47.950Z",
-    "modified": "2023-04-19T01:48:35.214Z",
+    "modified": "2023-04-19T20:15:39.079Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"Size\" : \"M\",\n  \"SugarLevel\" : \"70%\",\n  \"IceLevel\" : \"Regular\",\n  \"Price\" : 0.88\n}",
+      "raw": "{\n  \"Size\" : \"L\",\n  \"SugarLevel\" : \"70%\",\n  \"IceLevel\" : \"Regular\",\n  \"Price\" : 9.88\n}",
       "form": []
     },
     "tests": [
@@ -287,7 +287,7 @@
         "type": "res-body",
         "custom": "",
         "action": "equal",
-        "value": "successfully editted drink #438!"
+        "value": "successfully editted drink #105!"
       }
     ]
   },
@@ -384,7 +384,7 @@
     "_id": "df52fc88-3470-4c68-b047-b96e9ff60e7c",
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
-    "name": "edit order cust and price",
+    "name": "edit order cust and price 1",
     "url": "localhost:8001/b/editOrder",
     "method": "PUT",
     "sortNum": 120000,
@@ -961,5 +961,31 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "210ae970-6db6-4b84-82ec-4f83f5cd902f",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "edit order cust and price 2",
+    "url": "localhost:8001/b/editOrder",
+    "method": "PUT",
+    "sortNum": 125000,
+    "created": "2023-04-19T20:18:23.288Z",
+    "modified": "2023-04-19T20:18:55.692Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Edit_Order_Id\": \"5\",\n  \"Edit_Order_Cust_Id\": \"12\",\n  \"Edit_Order_Total_Price\": 20\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "equal",
+        "value": "successfully editted order #5!"
+      }
+    ]
   }
 ]
