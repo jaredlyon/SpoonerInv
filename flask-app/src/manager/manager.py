@@ -95,7 +95,7 @@ def delete_employee(employeeID):
 @manager.route('/stock/<storeID>', methods=['GET'])
 def get_stock(storeID):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Stock join Store_Stock SS on Stock.stock_id = SS.stock_id join Store S on SS.store_id = S.store_id where S.store_id = {0};'.format(storeID))
+    cursor.execute('select Stock.name as name, quantity, order_date_time, Stock.stock_id as stock_id, S.store_id as store_id from Stock join Store_Stock SS on Stock.stock_id = SS.stock_id join Store S on SS.store_id = S.store_id where S.store_id = {0};'.format(storeID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -123,7 +123,7 @@ def update_stock():
     the_query += 'order_date_time = "' + order_date_time + '", '
     the_query += 'name = "' + name + '", '
     the_query += 'quantity = ' + str(quantity) + ' '
-    the_query += 'WHERE stock_id = ' + str(stock_id) + ';'
+    the_query += 'WHERE stock_id = {0};'.format(stock_id)
     
     current_app.logger.info(the_query)
 
