@@ -58,3 +58,6 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+flask-app/src/__pycache__/__init__.cpython-39.pyc
+flask-app/src/__pycache__/views.cpython-39.pyc
+flask-app/src/manager/__pycache__/manager.cpython-39.pyc
