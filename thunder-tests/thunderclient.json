@@ -161,11 +161,11 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "delete drink 1",
-    "url": "localhost:8001/b/deleteDrink/5",
+    "url": "localhost:8001/b/deleteDrink/13",
     "method": "DELETE",
     "sortNum": 20000,
     "created": "2023-04-17T23:10:57.587Z",
-    "modified": "2023-04-19T01:48:04.593Z",
+    "modified": "2023-04-19T20:13:33.489Z",
     "headers": [],
     "params": [],
     "tests": [
@@ -173,7 +173,7 @@
         "type": "res-body",
         "custom": "",
         "action": "contains",
-        "value": "successfully deleted drink #5!"
+        "value": "successfully deleted drink #13!"
       }
     ]
   },
