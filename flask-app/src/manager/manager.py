@@ -35,7 +35,7 @@ def add_employee():
 
     # INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ('4088211520', 'jaredalyon@gmail.com', 'jared', 'lyon', 2);
 
-    the_query = 'INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ("' + phone + '", "' + email + '", "' + first_name + '", "' + last_name + '", ' + str(store_id) + ');'
+    the_query = "INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ('" + phone + "', '" + email + "', '" + first_name + "', '" + last_name + "', " + str(store_id) + ");"
 
     current_app.logger.info(the_query)
 
