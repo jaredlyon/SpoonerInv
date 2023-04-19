@@ -404,11 +404,7 @@
     "method": "GET",
     "sortNum": 100000,
     "created": "2023-04-18T15:38:38.927Z",
-<<<<<<< HEAD
     "modified": "2023-04-19T00:22:46.399Z",
-=======
-    "modified": "2023-04-19T00:22:24.218Z",
->>>>>>> 3fd48a5e0f5e5f393beba3c031492fcec2a8d328
     "headers": [],
     "params": [],
     "tests": []

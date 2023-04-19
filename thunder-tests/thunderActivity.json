@@ -73,5 +73,47 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "3265030a-980b-4d7f-9866-f68df4ec78ef",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/drinkInfo/1",
+    "url": "localhost:8001/drinkInfo/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-19T00:26:10.769Z",
+    "modified": "2023-04-19T00:26:10.769Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f3aeb262-bfe0-4835-a35a-7fecfe04c3b9",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/drinkInfo/1",
+    "url": "localhost:8001/b/drinkInfo/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-19T00:26:29.795Z",
+    "modified": "2023-04-19T00:26:29.795Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a17772e6-bef4-405a-9925-e0738f43106c",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/b/drinkInfo/84",
+    "url": "localhost:8001/b/drinkInfo/84",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-19T00:32:31.757Z",
+    "modified": "2023-04-19T00:32:31.757Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
