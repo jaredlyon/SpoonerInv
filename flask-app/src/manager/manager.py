@@ -34,8 +34,10 @@ def add_employee():
     current_app.logger.info(the_data)
 
     # INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ('4088211520', 'jaredalyon@gmail.com', 'jared', 'lyon', 2);
+    # "INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ('" + phone + "', '" + email + "', '" + first_name + "', '" + last_name + "', " + str(store_id) + ");"
+    # "INSERT INTO `Employee`(phone, email, first_name, last_name, store_id) VALUES ('{phone}', '{email}', '{firstname}', '{lastname}', {storeid})".format(phone=str(phone), email=str(email), firstname=str(first_name), lastname=str(last_name), storeid=str(store_id))
 
-    the_query = "INSERT INTO Employee(phone,email,first_name,last_name,store_id) VALUES ('" + phone + "', '" + email + "', '" + first_name + "', '" + last_name + "', " + str(store_id) + ");"
+    the_query = "INSERT INTO `Employee`(phone, email, first_name, last_name, store_id) VALUES ('{phone}', '{email}', '{firstname}', '{lastname}', {storeid})".format(phone=str(phone), email=str(email), firstname=str(first_name), lastname=str(last_name), storeid=str(store_id))
 
     current_app.logger.info(the_query)
 
@@ -43,7 +45,7 @@ def add_employee():
     cursor.execute(the_query)
     db.get_db().commit()
 
-    return "successfully hired " + first_name + " " + last_name + " at store #" + str(store_id) + "!"
+    return "successfully hired " + first_name + " " + last_name + " at store #" + str(store_id) + " with data: " + str(the_data) + "\n and query: " + the_query
 
 # Update the information of a given employee, such as their name, phone number, and email address
 @manager.route('/updateEmployee', methods=['PUT'])
