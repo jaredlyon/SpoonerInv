@@ -46,7 +46,7 @@ def add_employee():
     cursor.execute(the_query)
     db.get_db().commit()
 
-    return "success!"
+    return "successfully hired " + first_name + " " + last_name + " at store #" + str(store_id) + "!"
 
 # Update the information of a given employee, such as their name, phone number, and email address
 @manager.route('/updateEmployee', methods=['PUT'])
@@ -77,7 +77,7 @@ def update_employee():
     cursor.execute(the_query)
     db.get_db().commit()
 
-    return "success!"
+    return "successfully updated " + first_name + " " + last_name + " at store #" + str(store_id) + "!"
 
 # Find and delete an employee
 @manager.route('/fireEmployee/<employeeID>', methods=['DELETE'])
@@ -89,7 +89,8 @@ def delete_employee(employeeID):
     '''.format(employeeID)
     cursor = db.get_db().cursor()
     cursor.execute(query)
-    return "success!"
+    db.get_db().commit()
+    return "successfully deleted employee #" + employeeID + "!"
 
 # Get all the stocks available for the store to use and their revalent information
 @manager.route('/stock/<storeID>', methods=['GET'])
@@ -133,7 +134,7 @@ def update_stock():
     cursor.execute(the_query)
     db.get_db().commit()
 
-    return "success!"
+    return "successfully updated " + name + "!"
 
 # Get a store's information
 @manager.route('/store/<storeID>', methods=['GET'])
