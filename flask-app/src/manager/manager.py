@@ -138,7 +138,7 @@ def update_stock():
 def delete_stock(stockID):
     query = '''
         DELETE
-        FROM Employee
+        FROM Stock
         WHERE stock_id = {0};
     '''.format(stockID)
     cursor = db.get_db().cursor()
