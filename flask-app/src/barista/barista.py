@@ -329,3 +329,51 @@ def get_drink_info(drinkID):
 
     return json_data[0]
     #return str(json_data[0]['price'])
+
+    #Get the empolyees who work at the same store as an employee who puts in their employee id
+@barista.route('/otherEmployees/<employeeID>', methods=['GET'])
+def get_other_employees(employeeID):
+    store_id = get_employee_store(employeeID)
+
+    query = ''' SELECT phone as "Phone", email as "Email", first_name as "First Name", last_name as "Last Name" 
+            FROM Employee
+            Where store_id = {0};'''.format(store_id)
+    
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+        
+    return jsonify(json_data)
+
+@barista.route('/editInformation/<employeeID>', methods=['GET'])
+def updater_info(employeeID):
+    the_data = request.json
+
+    phone = the_data['phone']
+    email = the_data['email']
+    first_name = the_data['first_name']
+    last_name = the_data['last_name']
+
+    current_app.logger.info(the_data)
+
+    the_query = 'UPDATE Employee SET '
+    the_query += 'phone = "' + phone + '", '
+    the_query += 'email = "' + email + '", '
+    the_query += 'first_name = "' + first_name + '", '
+    the_query += 'last_name = "' + last_name + '", '
+    the_query += 'WHERE employee_id = {0};'.format(employeeID)
+
+    current_app.logger.info(the_query)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(the_query)
+    db.get_db().commit()
+
+    return "successfully updated " + first_name + " " + last_name + " with is #" + str(employeeID) + "!"
