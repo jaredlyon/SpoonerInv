@@ -125,6 +125,15 @@ def update_drink(drinkID):
     sugar_lvl = the_data['SugarLevel']
     ice_lvl = the_data['IceLevel']
     price = the_data['Price']
+    
+    drinkInfo = get_drink_info(drinkID)
+    
+    orderID = str(drinkInfo['order_id'])
+    prev_price = str(drinkInfo['price'])
+    
+    price_change = float(price) - float(prev_price)
+    
+    order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price_change) + ' WHERE order_id = ' + str(orderID) + ';'
 
     current_app.logger.info(the_data)
 
@@ -137,11 +146,9 @@ def update_drink(drinkID):
 
     current_app.logger.info(the_query)
     
-    #order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price) + ' WHERE order_id = ' + str(order_id) + ';'
-
     cursor = db.get_db().cursor()
     cursor.execute(the_query)
-    #cursor.execute(order_query)
+    cursor.execute(order_query)
     db.get_db().commit()
 
     return "success!"
@@ -156,10 +163,10 @@ def update_order():
 
     current_app.logger.info(the_data)
 
-    the_query = 'Update `Order` SET '
-    the_query += 'customer_id = ' + customer_id + ', '
-    the_query += 'total_price = ' + str(total_price) + ' '
-    the_query += 'WHERE order_id = ' + order_id + ';'
+    the_query += 'Updat `Order` SET '
+    the_query += 'customer_id = "' + customer_id + '", '
+    the_query += 'total_price = "' + total_price + ' '
+    the_query += 'WHERE order_id = "' + order_id + '";'
 
     current_app.logger.info(the_query)
 
@@ -170,6 +177,7 @@ def update_order():
     return "success!"
 
 # Deletes a given drink
+# Also reduces the corresponding order's total price
 @barista.route('/deleteDrink/<drinkID>', methods=['DELETE'])
 def delete_drink(drinkID):
     query = '''
@@ -178,11 +186,16 @@ def delete_drink(drinkID):
         WHERE drink_id = {0};
     '''.format(drinkID)
     
-    #order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price) + ' WHERE order_id = ' + str(order_id) + ';'
+    drinkInfo = get_drink_info(drinkID)
+    
+    orderID = str(drinkInfo['order_id'])
+    price = str(drinkInfo['price'])
+    
+    order_query = 'UPDATE `Order` SET total_price = total_price - ' + str(price) + ' WHERE order_id = ' + str(orderID) + ';'
     
     cursor = db.get_db().cursor()
+    cursor.execute(order_query)
     cursor.execute(query)
-    #cursor.execute(order_query)
     
     db.get_db().commit()
     return "success!"
@@ -291,3 +304,25 @@ def get_order_total_price(orderID):
     jsonify(json_data)
 
     return str(json_data[0]['total_price'])
+
+@barista.route('/drinkInfo/<drinkID>', methods=['GET'])
+def get_drink_info(drinkID):
+    query = '''SELECT O.order_id, D.price
+                FROM Drink D
+                JOIN `Order` O USING(order_id)
+                WHERE D.drink_id = {0};'''.format(drinkID)
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+
+    json_data = []
+    column_headers = [x[0] for x in cursor.description]
+    theData = cursor.fetchall()
+
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    jsonify(json_data)
+
+    return json_data[0]
+    #return str(json_data[0]['price'])

@@ -313,16 +313,16 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "edit existing drink",
-    "url": "localhost:8001/b/editDrink/1",
+    "url": "localhost:8001/b/editDrink/438",
     "method": "PUT",
     "sortNum": 60000,
     "created": "2023-04-17T23:13:47.950Z",
-    "modified": "2023-04-18T18:52:19.260Z",
+    "modified": "2023-04-19T00:42:39.397Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"Size\" : \"M\",\n  \"SugarLevel\" : \"70%\",\n  \"IceLevel\" : \"Regular\",\n  \"Price\" : 8.88\n}",
+      "raw": "{\n  \"Size\" : \"M\",\n  \"SugarLevel\" : \"70%\",\n  \"IceLevel\" : \"Regular\",\n  \"Price\" : 0.88\n}",
       "form": []
     },
     "tests": [
@@ -400,11 +400,11 @@
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
     "name": "get order cust id",
-    "url": "localhost:8001/b/orderCust/220",
+    "url": "localhost:8001/b/orderCust/1",
     "method": "GET",
     "sortNum": 100000,
     "created": "2023-04-18T15:38:38.927Z",
-    "modified": "2023-04-18T18:58:05.320Z",
+    "modified": "2023-04-19T00:22:24.218Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -498,5 +498,19 @@
         "value": "black tea"
       }
     ]
+  },
+  {
+    "_id": "48d2ff33-8d6a-4725-9840-54b2100461cf",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "get drink order_id and price",
+    "url": "localhost:8001/b/drinkInfo/84",
+    "method": "GET",
+    "sortNum": 130000,
+    "created": "2023-04-19T00:32:48.681Z",
+    "modified": "2023-04-19T00:32:48.681Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
