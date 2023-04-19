@@ -195,7 +195,7 @@
     "_id": "14f7bb6e-97f0-432f-bb00-3724cf0c9b26",
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
-    "name": "delete drink",
+    "name": "delete drink 1",
     "url": "localhost:8001/b/deleteDrink/5",
     "method": "DELETE",
     "sortNum": 20000,
@@ -318,7 +318,7 @@
     "_id": "848ae721-2cbe-48d2-90a4-d060fff53aa3",
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
-    "name": "edit existing drink",
+    "name": "edit existing drink 1",
     "url": "localhost:8001/b/editDrink/438",
     "method": "PUT",
     "sortNum": 60000,
@@ -344,7 +344,7 @@
     "_id": "b9ca10a5-9a2c-46e8-ad34-c7f701be8289",
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
-    "name": "post new drink",
+    "name": "post new drink 1",
     "url": "localhost:8001/b/createDrink",
     "method": "POST",
     "sortNum": 70000,
@@ -384,7 +384,7 @@
     "_id": "ded7ca87-e3ed-4285-b63b-9ee51b701848",
     "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
     "containerId": "",
-    "name": "delete order",
+    "name": "delete order 1",
     "url": "localhost:8001/b/deleteOrder/80",
     "method": "DELETE",
     "sortNum": 90000,
@@ -676,6 +676,100 @@
         "custom": "",
         "action": "contains",
         "value": "\"price\": 6.86"
+      }
+    ]
+  },
+  {
+    "_id": "0f76eac2-11bd-448b-af53-b62df65debba",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "delete drink 2",
+    "url": "localhost:8001/b/deleteDrink/6",
+    "method": "DELETE",
+    "sortNum": 25000,
+    "created": "2023-04-19T02:02:38.380Z",
+    "modified": "2023-04-19T02:02:59.740Z",
+    "headers": [],
+    "params": [],
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "contains",
+        "value": "successfully deleted drink #6!"
+      }
+    ]
+  },
+  {
+    "_id": "4c49a99a-9e5b-4780-b3a5-d625db4a8fc7",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "edit existing drink 2",
+    "url": "localhost:8001/b/editDrink/208",
+    "method": "PUT",
+    "sortNum": 65000,
+    "created": "2023-04-19T02:03:31.757Z",
+    "modified": "2023-04-19T02:04:36.012Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Size\" : \"L\",\n  \"SugarLevel\" : \"S\",\n  \"IceLevel\" : \"Regular\",\n  \"Price\" : 1.88\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "equal",
+        "value": "successfully editted drink #208!"
+      }
+    ]
+  },
+  {
+    "_id": "40023307-f659-46ff-85dc-727ab9ba19d0",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "post new drink 2",
+    "url": "localhost:8001/b/createDrink",
+    "method": "POST",
+    "sortNum": 75000,
+    "created": "2023-04-19T02:04:54.660Z",
+    "modified": "2023-04-19T02:05:36.452Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"size\" : \"M\",\n  \"sugar_lvl\" : \"70%\",\n  \"ice_lvl\" : \"Regular\",\n  \"price\" : 8.88,\n  \"order_id\" : 27\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "equal",
+        "value": "successfully created drink and added to order #27!"
+      }
+    ]
+  },
+  {
+    "_id": "a32ede02-3ecd-466a-992f-6ca4c728ff19",
+    "colId": "c36f0bb9-b442-43ec-8f04-6f2aab3ba7c2",
+    "containerId": "",
+    "name": "delete order 2",
+    "url": "localhost:8001/b/deleteOrder/200",
+    "method": "DELETE",
+    "sortNum": 95000,
+    "created": "2023-04-19T02:05:47.968Z",
+    "modified": "2023-04-19T02:06:17.057Z",
+    "headers": [],
+    "params": [],
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "equal",
+        "value": "successfully deleted order #200!"
       }
     ]
   }
