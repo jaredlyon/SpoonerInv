@@ -4,7 +4,7 @@ from src import db
 
 barista = Blueprint('barista', __name__)
 
-# Creates a new order with new drinks
+# Creates a new order (with no drinks)
 @barista.route('/createOrder', methods=['POST'])
 def create_order():
     the_data = request.json
@@ -14,6 +14,7 @@ def create_order():
 
     current_app.logger.info(the_data)
     
+    # get the store_id of the employee
     store_id = get_employee_store(employee_id)
 
     the_query = 'INSERT INTO `Order`(total_price, store_id, customer_id) VALUES ('
@@ -27,6 +28,7 @@ def create_order():
     cursor.execute(the_query)
     db.get_db().commit()
 
+    # get the "next" order number (the one for this order that you just added)
     current_order = get_next_order()
     return current_order
 
@@ -77,10 +79,8 @@ def get_order(orderID):
     theData = cursor.fetchall()
     for row in theData:
         json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
+        
+    return jsonify(json_data)
 
 
 # Returns all ingredients at the store of a given employee
@@ -231,11 +231,11 @@ def get_next_order():
 
     json_data = []
 
-    # fetchall the column headers and the nall the data from the cursor
+    # fetch all the column headers and the nall the data from the cursor
     column_headers = [x[0] for x in cursor.description]
     theData = cursor.fetchall()
 
-    # zip headers and data together into dictionaryand append to json data dict.
+    # zip headers and data together into dictionary and append to json data dict.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
@@ -257,7 +257,7 @@ def get_employee_store(employeeID):
     column_headers = [x[0] for x in cursor.description]
     theData = cursor.fetchall()
 
-    # zip headers and data together into dictionaryand append to json data dict.
+    # zip headers and data together into dictionary and append to json data dict.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
