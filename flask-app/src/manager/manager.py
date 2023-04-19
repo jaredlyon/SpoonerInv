@@ -133,20 +133,18 @@ def update_stock():
 
     return "successfully updated " + name + "!"
 
-# Get a store's information
-@manager.route('/store/<storeID>', methods=['GET'])
-def get_store(storeID):
+# Find and delete a stock item from a store
+@manager.route('/deleteStock/<stockID>', methods=['DELETE'])
+def delete_stock(stockID):
+    query = '''
+        DELETE
+        FROM Employee
+        WHERE stock_id = {0};
+    '''.format(stockID)
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Store S where S.store_id = {0};'.format(storeID))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
+    cursor.execute(query)
+    db.get_db().commit()
+    return "successfully deleted stock #" + stockID + "!"
 
 # Get all stores from a region
 @manager.route('/regionalStores/<regionID>', methods=['GET'])
