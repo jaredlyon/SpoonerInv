@@ -286,7 +286,7 @@ def get_order_custid(orderID):
     # return first row of json data and grab customer_id column
     return str(json_data[0]['customer_id'])
 
-# Get a customer id from a given order id
+# Get the total price of the order from a given order id
 @barista.route('/orderPrice/<orderID>', methods=['GET'])
 def get_order_total_price(orderID):
     query = '''SELECT * FROM `Order` WHERE order_id = {0};'''.format(orderID)
@@ -335,7 +335,7 @@ def get_drink_info(drinkID):
 def get_other_employees(employeeID):
     store_id = get_employee_store(employeeID)
 
-    query = ''' SELECT phone as "Phone", email as "Email", first_name as "First Name", last_name as "Last Name" 
+    query = ''' SELECT phone as "Phone", email as "Email", first_name as "First Name", last_name as "Last Name", employee_id as "EmployeeID" 
             FROM Employee
             Where store_id = {0};'''.format(store_id)
     
@@ -352,7 +352,8 @@ def get_other_employees(employeeID):
         
     return jsonify(json_data)
 
-@barista.route('/editInformation/<employeeID>', methods=['GET'])
+#edit the inofrmation of the employee currently using the route
+@barista.route('/editInformation/<employeeID>', methods=['Put'])
 def updater_info(employeeID):
     the_data = request.json
 
@@ -367,7 +368,7 @@ def updater_info(employeeID):
     the_query += 'phone = "' + phone + '", '
     the_query += 'email = "' + email + '", '
     the_query += 'first_name = "' + first_name + '", '
-    the_query += 'last_name = "' + last_name + '", '
+    the_query += 'last_name = "' + last_name + '" '
     the_query += 'WHERE employee_id = {0};'.format(employeeID)
 
     current_app.logger.info(the_query)
