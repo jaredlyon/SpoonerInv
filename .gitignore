@@ -2,6 +2,10 @@
 secrets/
 !secrets/README.md
 stacks/
+__init__.cpython-39.pyc
+views.cpython-39.pyc
+manager.cpython-39.pyc
+barista.cpython-39.pyc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
