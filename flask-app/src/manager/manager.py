@@ -49,7 +49,7 @@ def add_employee():
     return "success!"
 
 # Update the information of a given employee, such as their name, phone number, and email address
-@manager.route('updateEmployee', methods=['PUT'])
+@manager.route('/updateEmployee', methods=['PUT'])
 def update_employee():
     
     the_data = request.json
