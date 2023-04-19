@@ -10,6 +10,7 @@ barista.cpython-39.pyc
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
 
 # C extensions
 *.so
