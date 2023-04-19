@@ -66,7 +66,7 @@ def create_drink():
     cursor.execute(order_query)
     db.get_db().commit()
 
-    return "success!"
+    return "successfully created drink and added to order #{0}!".format(order_id)
 
 # Gets all of the drinks associated with an order
 @barista.route('/order/<orderID>', methods=['GET'])
@@ -152,7 +152,7 @@ def update_drink(drinkID):
     cursor.execute(order_query)
     db.get_db().commit()
 
-    return "success!"
+    return "successfully editted drink #{0}!".format(drinkID)
 
 # Edit information of an order
 @barista.route('/editOrder', methods=['PUT'])
@@ -176,7 +176,7 @@ def update_order():
     cursor.execute(the_query)
     db.get_db().commit()
 
-    return "success!"
+    return "successfully editted order #{0}!".format(order_id)
 
 # Deletes a given drink
 # Also reduces the corresponding order's total price
@@ -202,7 +202,7 @@ def delete_drink(drinkID):
     cursor.execute(query)
     
     db.get_db().commit()
-    return "success!"
+    return "successfully deleted drink #{0}!".format(drinkID)
 
 # Deletes a given order including all of its associated drinks (assuming it cascades)
 @barista.route('/deleteOrder/<orderID>', methods=['DELETE'])
@@ -216,7 +216,7 @@ def delete_order(orderID):
     cursor.execute(query)
     
     db.get_db().commit()
-    return "success!"
+    return "successfully deleted order #{0}!".format(orderID)
 
 # Gets the count of distinct orders from the database
 # Returns the count as an integer
