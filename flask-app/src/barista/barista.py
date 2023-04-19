@@ -165,10 +165,10 @@ def update_order():
 
     current_app.logger.info(the_data)
 
-    the_query += 'Update `Order` SET '
-    the_query += 'customer_id = "' + customer_id + '", '
-    the_query += 'total_price = "' + total_price + ' '
-    the_query += 'WHERE order_id = "' + order_id + '";'
+    the_query = 'Update `Order` SET '
+    the_query += 'customer_id = ' + str(customer_id) + ', '
+    the_query += 'total_price = ' + str(total_price) + ' '
+    the_query += 'WHERE order_id = ' + order_id + ';'
 
     current_app.logger.info(the_query)
 
