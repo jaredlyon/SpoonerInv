@@ -119,6 +119,8 @@ def update_stock():
 
     current_app.logger.info(the_data)
 
+    # UPDATE Stock SET name = 'bingus', order_date_time = '2012-04-21T18:25:43-05:00', quantity = 254 WHERE stock_id = 2;
+
     the_query = 'UPDATE Stock SET '
     the_query += 'order_date_time = "' + order_date_time + '", '
     the_query += 'name = "' + name + '", '
