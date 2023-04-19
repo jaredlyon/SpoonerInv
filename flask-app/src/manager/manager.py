@@ -123,7 +123,7 @@ def update_stock():
     the_query += 'order_date_time = "' + order_date_time + '", '
     the_query += 'name = "' + name + '", '
     the_query += 'quantity = ' + str(quantity) + ' '
-    the_query += 'WHERE stock_id = ' + str(stock_id) + ';'
+    the_query += 'WHERE stock_id = {0};'.format(stock_id)
     
     current_app.logger.info(the_query)
 
