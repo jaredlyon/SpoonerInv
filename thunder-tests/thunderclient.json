@@ -64,7 +64,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-04-17T23:01:41.800Z",
-    "modified": "2023-04-17T23:04:34.642Z",
+    "modified": "2023-04-19T05:34:30.478Z",
     "headers": [],
     "params": [],
     "body": {
@@ -72,7 +72,14 @@
       "raw": "{\n  \"phone\": \"4088211520\",\n  \"email\": \"jaredalyon@gmail.com\",\n  \"first_name\": \"Jared\",\n  \"last_name\": \"Lyon\",\n  \"store_id\": 2\n}",
       "form": []
     },
-    "tests": []
+    "tests": [
+      {
+        "type": "res-body",
+        "custom": "",
+        "action": "contains",
+        "value": "INSERT INTO `Store`(hours, region_id, street, city, zip, name, store_id) VALUES ('example list of hours', 1, '1000 Bascom Ave', 'san jose', 95125, 'Teaspoon Campbell', 1000)"
+      }
+    ]
   },
   {
     "_id": "b8ec55d6-49e9-495e-b736-3442594172f1",
@@ -770,6 +777,32 @@
         "custom": "",
         "action": "equal",
         "value": "successfully deleted order #200!"
+      }
+    ]
+  },
+  {
+    "_id": "0344117e-5b5d-42bd-9784-05c455bccada",
+    "colId": "d4a4d2b8-f25f-4c99-9cf8-4b886f2d4b8c",
+    "containerId": "",
+    "name": "addStore to region",
+    "url": "localhost:8001/m/addStore",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2023-04-19T05:30:43.592Z",
+    "modified": "2023-04-19T05:35:19.013Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"hours\": \"example list of hours\",\n  \"region_id\": 1,\n  \"street\": \"1000 Bascom Ave\",\n  \"city\": \"san jose\",\n  \"zip\": 95125,\n  \"name\": \"Teaspoon Campbell\",\n  \"store_id\": 1000\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-code",
+        "custom": "",
+        "action": "contains",
+        "value": "INSERT INTO `Store`(hours, region_id, street, city, zip, name, store_id) VALUES ('example list of hours', 1, '1000 Bascom Ave', 'san jose', 95125, 'Teaspoon Campbell', 1000)"
       }
     ]
   }

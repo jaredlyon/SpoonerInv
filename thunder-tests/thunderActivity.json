@@ -115,5 +115,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "11dc66ce-c111-4b9d-866c-040a495e42da",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8001/m/addStore",
+    "url": "localhost:8001/m/addStore",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-19T05:30:06.641Z",
+    "modified": "2023-04-19T05:30:21.496Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"hours\": \"example list of hours\",\n  \"region_id\": 1,\n  \"street\": \"1000 Bascom Ave\",\n  \"city\": \"san jose\",\n  \"zip\": 95125,\n  \"name\": \"Teaspoon Campbell\",\n  \"store_id\":1000\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
