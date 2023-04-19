@@ -2,8 +2,6 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-# TODO: finish last update route and make order price a derived attribute from its drinks
-
 barista = Blueprint('barista', __name__)
 
 # Creates a new order with new drinks
@@ -15,7 +13,7 @@ def create_order():
     customer_id = the_data['customer_id']
 
     current_app.logger.info(the_data)
-    #comment so i can commit
+    
     store_id = get_employee_store(employee_id)
 
     the_query = 'INSERT INTO `Order`(total_price, store_id, customer_id) VALUES ('
@@ -126,13 +124,16 @@ def update_drink(drinkID):
     ice_lvl = the_data['IceLevel']
     price = the_data['Price']
     
+    # grab order_id and previous drink price for the given drink
     drinkInfo = get_drink_info(drinkID)
     
     orderID = str(drinkInfo['order_id'])
     prev_price = str(drinkInfo['price'])
     
+    # calculate price change (if any)
     price_change = float(price) - float(prev_price)
     
+    # update order total price
     order_query = 'UPDATE `Order` SET total_price = total_price + ' + str(price_change) + ' WHERE order_id = ' + str(orderID) + ';'
 
     current_app.logger.info(the_data)
@@ -153,6 +154,7 @@ def update_drink(drinkID):
 
     return "success!"
 
+# Edit information of an order
 @barista.route('/editOrder', methods=['PUT'])
 def update_order():
     the_data = request.json
@@ -163,7 +165,7 @@ def update_order():
 
     current_app.logger.info(the_data)
 
-    the_query += 'Updat `Order` SET '
+    the_query += 'Update `Order` SET '
     the_query += 'customer_id = "' + customer_id + '", '
     the_query += 'total_price = "' + total_price + ' '
     the_query += 'WHERE order_id = "' + order_id + '";'
@@ -186,11 +188,13 @@ def delete_drink(drinkID):
         WHERE drink_id = {0};
     '''.format(drinkID)
     
+    # grab order_id and previous drink price for the given drink
     drinkInfo = get_drink_info(drinkID)
     
     orderID = str(drinkInfo['order_id'])
     price = str(drinkInfo['price'])
     
+    # update order total price
     order_query = 'UPDATE `Order` SET total_price = total_price - ' + str(price) + ' WHERE order_id = ' + str(orderID) + ';'
     
     cursor = db.get_db().cursor()
@@ -213,11 +217,6 @@ def delete_order(orderID):
     
     db.get_db().commit()
     return "success!"
-
-# # TODO: Updates the supply and expiration date of ingredients available
-# @barista.route('/updateIngredient', methods=['PUT'])
-# def update_ingredient():
-#     return
 
 # Gets the count of distinct orders from the database
 # Returns the count as an integer
@@ -258,7 +257,7 @@ def get_employee_store(employeeID):
     column_headers = [x[0] for x in cursor.description]
     theData = cursor.fetchall()
 
-    # zip headers and data togetehr into dictionaryand append to json data dict.
+    # zip headers and data together into dictionaryand append to json data dict.
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
@@ -266,6 +265,7 @@ def get_employee_store(employeeID):
 
     return str(json_data[0]['store_id'])
 
+# Get a customer id from a given order id
 @barista.route('/orderCust/<orderID>', methods=['GET'])
 def get_order_custid(orderID):
     query = '''SELECT * FROM `Order` WHERE order_id = {0};'''.format(orderID)
@@ -283,9 +283,10 @@ def get_order_custid(orderID):
     
     jsonify(json_data)
     
+    # return first row of json data and grab customer_id column
     return str(json_data[0]['customer_id'])
 
-
+# Get a customer id from a given order id
 @barista.route('/orderPrice/<orderID>', methods=['GET'])
 def get_order_total_price(orderID):
     query = '''SELECT * FROM `Order` WHERE order_id = {0};'''.format(orderID)
@@ -303,8 +304,10 @@ def get_order_total_price(orderID):
     
     jsonify(json_data)
 
+    # return first row of json data and grab total_price column
     return str(json_data[0]['total_price'])
 
+# Get the order_id and price of a drink
 @barista.route('/drinkInfo/<drinkID>', methods=['GET'])
 def get_drink_info(drinkID):
     query = '''SELECT O.order_id, D.price
