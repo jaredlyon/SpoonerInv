@@ -16,7 +16,7 @@ def create_app():
 
     # these are for the DB object to be able to connect to MySQL. 
     app.config['MYSQL_DATABASE_USER'] = 'root'
-    app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_password.txt').readline()
+    app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
     app.config['MYSQL_DATABASE_DB'] = 'SpoonerInv'  # Change this to your DB name
@@ -31,12 +31,12 @@ def create_app():
 
     # Import the various routes
     from src.views import views
-    from src.baristia.baristia import baristia
+    from src.barista.barista import barista
     from src.manager.manager import manager
 
     # Register the routes that we just imported so they can be properly handled
     app.register_blueprint(views,       url_prefix='/v')
-    app.register_blueprint(baristia,    url_prefix="/b")
+    app.register_blueprint(barista,    url_prefix="/b")
     app.register_blueprint(manager,     url_prefix="/m")
 
 

@@ -1,101 +1,1001 @@
 ingredient_id,name,quantity,expiration_date
-1,raw pineapples,29,2023-04-21
-2,canned coconut juice,57,2023-04-24
-3,ube flavoring,87,2023-04-30
-4,raw strawberry,99,2023-05-02
-5,green tea,35,2023-04-22
-6,milk,4,2023-04-24
-7,cane sugar,69,2023-04-29
-8,black tea,47,2023-04-30
-9,canned coconut juice,86,2023-04-23
-10,green tea,94,2023-04-29
-11,honey,23,2023-04-30
-12,honey,60,2023-04-21
-13,milk,98,2023-04-29
-14,black tea,91,2023-04-23
-15,ube flavoring,17,2023-04-29
-16,ube flavoring,6,2023-04-23
-17,lychee tea,68,2023-05-02
-18,ube flavoring,46,2023-04-30
-19,canned coconut juice,30,2023-04-25
-20,green tea,16,2023-04-29
-21,milk,28,2023-05-02
-22,lychee tea,86,2023-05-01
-23,tapioca,87,2023-05-02
-24,raw pineapples,27,2023-04-27
-25,ube flavoring,100,2023-04-28
-26,canned coconut juice,21,2023-04-27
-27,milk,65,2023-05-01
-28,green tea,79,2023-04-27
-29,canned coconut juice,89,2023-05-02
-30,canned mango,96,2023-04-22
-31,ube flavoring,71,2023-05-01
-32,raw strawberry,73,2023-04-27
-33,raw pineapples,87,2023-04-30
-34,milk,95,2023-04-29
-35,cane sugar,28,2023-04-21
-36,milk,50,2023-04-25
-37,honey,92,2023-04-25
-38,canned coconut juice,93,2023-05-01
-39,tapioca,84,2023-04-24
-40,lychee tea,85,2023-04-22
-41,green tea,63,2023-04-25
-42,cane sugar,72,2023-05-02
-43,lychee tea,100,2023-04-24
-44,lychee tea,86,2023-05-01
-45,milk,92,2023-04-23
-46,raw pineapples,37,2023-04-22
-47,honey,100,2023-04-22
-48,black tea,60,2023-04-24
-49,ube flavoring,14,2023-05-01
-50,raw pineapples,74,2023-05-01
-51,tapioca,62,2023-04-25
-52,raw pineapples,92,2023-04-26
-53,honey,91,2023-04-26
-54,tapioca,52,2023-04-24
-55,tapioca,15,2023-04-21
-56,green tea,34,2023-04-22
-57,raw strawberry,6,2023-04-25
-58,tapioca,74,2023-05-02
-59,raw strawberry,8,2023-04-24
-60,tapioca,42,2023-04-25
-61,canned mango,17,2023-04-29
-62,tapioca,70,2023-04-29
-63,lychee tea,38,2023-04-22
-64,canned mango,19,2023-04-28
-65,cane sugar,63,2023-04-25
-66,cane sugar,98,2023-04-21
-67,milk,59,2023-04-23
-68,milk,65,2023-04-24
-69,canned coconut juice,93,2023-04-26
-70,green tea,43,2023-04-30
-71,green tea,65,2023-05-01
-72,black tea,32,2023-04-24
-73,honey,74,2023-05-02
-74,raw strawberry,56,2023-04-29
-75,milk,67,2023-04-22
-76,green tea,82,2023-04-26
-77,green tea,35,2023-04-27
-78,canned mango,4,2023-05-02
-79,raw pineapples,10,2023-05-01
-80,honey,40,2023-04-29
-81,canned coconut juice,61,2023-04-25
-82,lychee tea,47,2023-04-28
-83,raw strawberry,67,2023-04-28
-84,raw pineapples,42,2023-04-22
-85,lychee tea,4,2023-04-29
-86,tapioca,17,2023-04-23
-87,black tea,52,2023-04-28
-88,cane sugar,65,2023-05-02
-89,ube flavoring,38,2023-04-22
-90,canned coconut juice,58,2023-04-24
-91,milk,57,2023-04-27
-92,raw strawberry,3,2023-04-23
-93,ube flavoring,73,2023-04-25
-94,milk,7,2023-04-21
-95,cane sugar,13,2023-04-21
-96,canned coconut juice,53,2023-04-22
-97,milk,47,2023-04-21
-98,tapioca,35,2023-04-30
-99,black tea,63,2023-04-25
-100,lychee tea,41,2023-04-30
+1,cane sugar,75,2023-05-01
+2,green tea,80,2023-04-22
+3,honey,5,2023-04-24
+4,canned mango,84,2023-04-25
+5,ube flavoring,90,2023-04-27
+6,milk,60,2023-04-22
+7,raw strawberry,47,2023-04-21
+8,cane sugar,83,2023-04-27
+9,lychee tea,73,2023-04-22
+10,raw pineapples,97,2023-04-25
+11,honey,76,2023-04-23
+12,honey,87,2023-04-23
+13,lychee tea,60,2023-04-21
+14,canned mango,50,2023-04-25
+15,green tea,24,2023-04-22
+16,black tea,97,2023-05-02
+17,green tea,65,2023-04-22
+18,tapioca,31,2023-05-02
+19,honey,39,2023-04-23
+20,canned mango,41,2023-04-30
+21,raw pineapples,30,2023-04-26
+22,cane sugar,27,2023-05-01
+23,honey,44,2023-04-30
+24,raw pineapples,52,2023-04-22
+25,raw strawberry,34,2023-05-02
+26,black tea,63,2023-04-21
+27,cane sugar,31,2023-04-24
+28,lychee tea,11,2023-04-29
+29,cane sugar,20,2023-04-27
+30,honey,70,2023-05-02
+31,canned mango,43,2023-04-29
+32,tapioca,15,2023-04-30
+33,canned coconut juice,94,2023-04-27
+34,honey,76,2023-04-30
+35,cane sugar,52,2023-04-27
+36,tapioca,41,2023-04-29
+37,ube flavoring,2,2023-05-01
+38,raw strawberry,81,2023-04-27
+39,ube flavoring,54,2023-04-24
+40,raw strawberry,58,2023-04-27
+41,canned coconut juice,86,2023-05-01
+42,tapioca,70,2023-05-01
+43,cane sugar,73,2023-04-24
+44,ube flavoring,5,2023-04-27
+45,honey,29,2023-04-21
+46,lychee tea,49,2023-04-26
+47,tapioca,51,2023-04-30
+48,black tea,22,2023-04-28
+49,black tea,81,2023-04-29
+50,milk,1,2023-04-29
+51,canned mango,66,2023-04-28
+52,tapioca,44,2023-04-25
+53,milk,54,2023-04-27
+54,raw strawberry,97,2023-04-23
+55,cane sugar,85,2023-05-01
+56,raw strawberry,4,2023-04-21
+57,honey,7,2023-04-29
+58,ube flavoring,99,2023-04-26
+59,tapioca,39,2023-04-21
+60,tapioca,62,2023-04-27
+61,canned coconut juice,75,2023-04-22
+62,cane sugar,76,2023-04-25
+63,tapioca,2,2023-04-21
+64,lychee tea,65,2023-04-23
+65,cane sugar,68,2023-04-22
+66,milk,55,2023-04-24
+67,milk,98,2023-04-21
+68,canned mango,63,2023-04-23
+69,raw pineapples,9,2023-04-22
+70,raw strawberry,50,2023-04-30
+71,raw pineapples,71,2023-04-26
+72,honey,49,2023-04-25
+73,ube flavoring,26,2023-04-27
+74,cane sugar,78,2023-04-26
+75,ube flavoring,66,2023-04-26
+76,ube flavoring,89,2023-04-25
+77,lychee tea,22,2023-04-29
+78,canned coconut juice,16,2023-04-29
+79,canned mango,97,2023-04-28
+80,black tea,51,2023-04-21
+81,cane sugar,50,2023-04-21
+82,raw pineapples,87,2023-05-01
+83,cane sugar,30,2023-04-22
+84,tapioca,42,2023-05-01
+85,canned mango,33,2023-04-24
+86,canned mango,50,2023-05-02
+87,canned mango,2,2023-05-02
+88,green tea,73,2023-04-27
+89,lychee tea,54,2023-04-28
+90,raw pineapples,90,2023-04-27
+91,black tea,6,2023-04-29
+92,cane sugar,12,2023-04-30
+93,black tea,8,2023-04-26
+94,milk,15,2023-04-24
+95,ube flavoring,92,2023-04-26
+96,canned coconut juice,63,2023-04-21
+97,green tea,79,2023-04-22
+98,cane sugar,16,2023-04-23
+99,green tea,4,2023-04-28
+100,canned coconut juice,91,2023-04-28
+101,ube flavoring,82,2023-04-27
+102,ube flavoring,10,2023-04-28
+103,black tea,61,2023-04-28
+104,honey,14,2023-04-24
+105,cane sugar,29,2023-04-27
+106,raw strawberry,52,2023-04-30
+107,milk,81,2023-04-21
+108,raw strawberry,87,2023-04-30
+109,honey,48,2023-04-27
+110,honey,29,2023-04-29
+111,tapioca,48,2023-04-29
+112,canned coconut juice,44,2023-05-02
+113,canned coconut juice,5,2023-04-22
+114,cane sugar,53,2023-04-29
+115,ube flavoring,19,2023-04-25
+116,tapioca,69,2023-04-22
+117,canned mango,41,2023-04-25
+118,canned mango,15,2023-04-23
+119,raw strawberry,7,2023-04-26
+120,ube flavoring,87,2023-04-21
+121,lychee tea,77,2023-04-29
+122,raw pineapples,58,2023-05-02
+123,raw strawberry,2,2023-04-29
+124,cane sugar,21,2023-04-23
+125,lychee tea,69,2023-04-22
+126,cane sugar,44,2023-04-26
+127,lychee tea,34,2023-04-28
+128,ube flavoring,88,2023-04-28
+129,raw strawberry,14,2023-04-28
+130,honey,87,2023-04-29
+131,green tea,71,2023-04-27
+132,tapioca,77,2023-04-28
+133,black tea,97,2023-04-22
+134,black tea,94,2023-04-23
+135,ube flavoring,73,2023-04-28
+136,raw pineapples,98,2023-05-02
+137,tapioca,93,2023-04-23
+138,black tea,62,2023-04-29
+139,lychee tea,81,2023-04-23
+140,canned coconut juice,99,2023-04-23
+141,raw pineapples,89,2023-04-26
+142,black tea,43,2023-04-23
+143,honey,76,2023-04-28
+144,green tea,83,2023-04-27
+145,canned mango,4,2023-04-29
+146,green tea,59,2023-04-28
+147,tapioca,76,2023-04-25
+148,raw strawberry,95,2023-04-22
+149,raw strawberry,47,2023-04-21
+150,canned mango,74,2023-04-22
+151,honey,90,2023-04-22
+152,canned coconut juice,51,2023-04-23
+153,canned mango,76,2023-04-22
+154,green tea,87,2023-04-22
+155,cane sugar,94,2023-04-30
+156,honey,1,2023-04-26
+157,milk,93,2023-04-25
+158,raw pineapples,6,2023-05-01
+159,tapioca,98,2023-05-02
+160,ube flavoring,70,2023-04-25
+161,ube flavoring,78,2023-04-21
+162,green tea,84,2023-04-21
+163,cane sugar,42,2023-05-01
+164,canned coconut juice,47,2023-04-21
+165,tapioca,60,2023-04-27
+166,cane sugar,16,2023-04-23
+167,tapioca,91,2023-04-23
+168,milk,22,2023-04-22
+169,canned coconut juice,46,2023-04-26
+170,milk,43,2023-04-21
+171,canned mango,46,2023-04-26
+172,ube flavoring,75,2023-04-25
+173,cane sugar,52,2023-04-28
+174,black tea,36,2023-04-23
+175,honey,49,2023-04-30
+176,honey,75,2023-05-01
+177,tapioca,41,2023-04-24
+178,ube flavoring,31,2023-04-27
+179,cane sugar,44,2023-04-21
+180,milk,19,2023-05-02
+181,milk,36,2023-04-23
+182,honey,50,2023-05-01
+183,canned coconut juice,67,2023-04-22
+184,ube flavoring,23,2023-04-22
+185,cane sugar,84,2023-04-23
+186,raw pineapples,84,2023-04-21
+187,tapioca,32,2023-04-21
+188,lychee tea,18,2023-04-23
+189,canned coconut juice,65,2023-04-26
+190,milk,49,2023-05-01
+191,green tea,91,2023-04-25
+192,black tea,3,2023-04-24
+193,ube flavoring,60,2023-04-29
+194,raw strawberry,91,2023-04-27
+195,milk,17,2023-04-29
+196,canned coconut juice,99,2023-05-01
+197,honey,99,2023-04-23
+198,canned mango,42,2023-05-02
+199,ube flavoring,32,2023-04-26
+200,tapioca,3,2023-04-22
+201,cane sugar,23,2023-05-01
+202,ube flavoring,81,2023-04-30
+203,ube flavoring,68,2023-05-02
+204,cane sugar,13,2023-05-01
+205,raw strawberry,51,2023-04-23
+206,honey,68,2023-04-25
+207,honey,62,2023-04-29
+208,cane sugar,39,2023-04-26
+209,canned mango,67,2023-04-24
+210,canned coconut juice,82,2023-04-27
+211,lychee tea,71,2023-04-28
+212,canned mango,62,2023-05-01
+213,black tea,55,2023-04-26
+214,green tea,49,2023-05-02
+215,canned mango,67,2023-05-02
+216,milk,98,2023-04-29
+217,milk,3,2023-04-24
+218,honey,61,2023-04-28
+219,ube flavoring,55,2023-04-21
+220,black tea,9,2023-04-24
+221,black tea,2,2023-04-30
+222,ube flavoring,85,2023-04-25
+223,black tea,6,2023-04-21
+224,black tea,99,2023-04-30
+225,honey,35,2023-05-01
+226,raw pineapples,98,2023-04-22
+227,tapioca,29,2023-04-21
+228,lychee tea,24,2023-04-28
+229,tapioca,64,2023-04-21
+230,ube flavoring,74,2023-05-01
+231,tapioca,31,2023-04-27
+232,canned coconut juice,79,2023-04-26
+233,canned mango,94,2023-04-30
+234,milk,5,2023-04-23
+235,tapioca,37,2023-05-02
+236,milk,22,2023-04-25
+237,lychee tea,3,2023-05-01
+238,green tea,66,2023-04-21
+239,green tea,32,2023-04-26
+240,green tea,27,2023-04-27
+241,ube flavoring,25,2023-04-26
+242,milk,96,2023-04-30
+243,ube flavoring,25,2023-04-30
+244,raw strawberry,3,2023-04-24
+245,honey,21,2023-04-30
+246,green tea,73,2023-04-26
+247,canned mango,85,2023-04-22
+248,ube flavoring,18,2023-04-22
+249,raw strawberry,99,2023-04-23
+250,lychee tea,53,2023-04-27
+251,green tea,30,2023-04-28
+252,raw strawberry,76,2023-04-23
+253,cane sugar,86,2023-04-23
+254,raw pineapples,21,2023-04-30
+255,cane sugar,93,2023-05-01
+256,raw pineapples,22,2023-04-27
+257,black tea,93,2023-04-24
+258,canned coconut juice,31,2023-04-30
+259,raw strawberry,30,2023-04-21
+260,canned mango,69,2023-04-25
+261,black tea,2,2023-04-26
+262,canned coconut juice,77,2023-04-26
+263,raw pineapples,88,2023-04-26
+264,canned mango,47,2023-04-28
+265,cane sugar,11,2023-05-02
+266,green tea,53,2023-04-24
+267,milk,7,2023-04-24
+268,canned coconut juice,93,2023-05-02
+269,canned mango,97,2023-04-23
+270,raw strawberry,22,2023-04-27
+271,raw strawberry,39,2023-04-26
+272,honey,75,2023-05-01
+273,green tea,30,2023-04-25
+274,cane sugar,5,2023-05-01
+275,canned mango,2,2023-04-26
+276,honey,18,2023-04-26
+277,canned mango,17,2023-04-29
+278,raw strawberry,90,2023-04-30
+279,lychee tea,6,2023-04-30
+280,ube flavoring,50,2023-04-28
+281,canned coconut juice,55,2023-04-28
+282,green tea,100,2023-04-21
+283,tapioca,95,2023-04-25
+284,black tea,84,2023-04-24
+285,canned coconut juice,71,2023-04-24
+286,milk,87,2023-05-01
+287,honey,97,2023-05-01
+288,green tea,63,2023-04-26
+289,raw pineapples,89,2023-04-22
+290,canned mango,61,2023-04-30
+291,green tea,3,2023-05-02
+292,milk,55,2023-04-27
+293,cane sugar,77,2023-04-27
+294,raw pineapples,63,2023-05-01
+295,lychee tea,55,2023-04-29
+296,raw strawberry,46,2023-04-23
+297,raw pineapples,63,2023-04-30
+298,lychee tea,23,2023-04-24
+299,lychee tea,29,2023-04-21
+300,green tea,90,2023-05-01
+301,honey,26,2023-05-01
+302,tapioca,35,2023-04-30
+303,lychee tea,79,2023-04-30
+304,black tea,30,2023-04-26
+305,milk,63,2023-04-27
+306,honey,40,2023-05-02
+307,black tea,26,2023-04-23
+308,tapioca,96,2023-04-28
+309,black tea,35,2023-04-24
+310,tapioca,85,2023-04-26
+311,tapioca,73,2023-04-26
+312,black tea,33,2023-04-23
+313,black tea,73,2023-05-01
+314,cane sugar,96,2023-04-30
+315,cane sugar,56,2023-04-30
+316,milk,2,2023-04-26
+317,ube flavoring,68,2023-04-27
+318,raw pineapples,32,2023-04-29
+319,raw strawberry,18,2023-04-30
+320,raw pineapples,84,2023-04-24
+321,raw strawberry,87,2023-05-01
+322,canned mango,49,2023-05-01
+323,canned coconut juice,60,2023-04-24
+324,raw pineapples,86,2023-04-21
+325,canned coconut juice,59,2023-04-26
+326,honey,68,2023-04-30
+327,canned coconut juice,43,2023-04-30
+328,lychee tea,51,2023-04-22
+329,lychee tea,30,2023-04-25
+330,black tea,53,2023-04-25
+331,lychee tea,22,2023-04-23
+332,tapioca,20,2023-04-30
+333,cane sugar,53,2023-04-30
+334,canned mango,9,2023-04-24
+335,raw pineapples,97,2023-04-23
+336,tapioca,82,2023-04-24
+337,raw pineapples,12,2023-04-26
+338,canned coconut juice,1,2023-04-30
+339,cane sugar,47,2023-04-22
+340,green tea,46,2023-04-21
+341,ube flavoring,80,2023-05-01
+342,canned mango,14,2023-04-21
+343,milk,40,2023-04-26
+344,raw strawberry,80,2023-04-30
+345,tapioca,94,2023-04-28
+346,raw pineapples,71,2023-04-23
+347,raw pineapples,49,2023-04-30
+348,tapioca,54,2023-04-30
+349,cane sugar,39,2023-04-26
+350,ube flavoring,75,2023-05-01
+351,raw pineapples,59,2023-04-22
+352,cane sugar,60,2023-04-26
+353,canned mango,3,2023-05-01
+354,honey,81,2023-04-24
+355,tapioca,91,2023-04-30
+356,raw pineapples,26,2023-04-21
+357,raw pineapples,75,2023-04-23
+358,black tea,10,2023-04-25
+359,raw strawberry,17,2023-04-21
+360,raw strawberry,79,2023-04-26
+361,canned mango,89,2023-04-28
+362,tapioca,53,2023-04-26
+363,raw pineapples,54,2023-04-22
+364,cane sugar,54,2023-04-21
+365,milk,66,2023-04-29
+366,tapioca,61,2023-04-23
+367,honey,50,2023-04-26
+368,honey,83,2023-04-21
+369,ube flavoring,75,2023-04-22
+370,ube flavoring,5,2023-04-27
+371,green tea,81,2023-05-01
+372,cane sugar,6,2023-04-26
+373,raw pineapples,83,2023-04-21
+374,honey,59,2023-04-29
+375,black tea,14,2023-04-22
+376,cane sugar,44,2023-04-22
+377,cane sugar,62,2023-04-30
+378,ube flavoring,6,2023-04-27
+379,black tea,16,2023-04-23
+380,raw strawberry,58,2023-04-28
+381,cane sugar,31,2023-05-01
+382,lychee tea,45,2023-04-27
+383,raw strawberry,23,2023-04-28
+384,milk,13,2023-04-22
+385,honey,9,2023-04-26
+386,green tea,40,2023-04-24
+387,raw pineapples,40,2023-04-29
+388,lychee tea,86,2023-05-01
+389,honey,48,2023-04-27
+390,raw strawberry,18,2023-04-28
+391,raw strawberry,62,2023-04-29
+392,lychee tea,92,2023-04-26
+393,honey,98,2023-04-27
+394,black tea,50,2023-04-23
+395,tapioca,31,2023-04-21
+396,lychee tea,63,2023-05-01
+397,raw pineapples,28,2023-04-26
+398,green tea,61,2023-04-22
+399,raw strawberry,27,2023-04-30
+400,raw pineapples,27,2023-04-29
+401,black tea,63,2023-04-23
+402,canned coconut juice,59,2023-04-21
+403,milk,38,2023-04-25
+404,black tea,16,2023-04-21
+405,ube flavoring,4,2023-04-22
+406,black tea,41,2023-04-21
+407,lychee tea,68,2023-04-28
+408,milk,44,2023-04-21
+409,honey,37,2023-04-28
+410,green tea,84,2023-05-01
+411,tapioca,73,2023-04-29
+412,green tea,77,2023-04-27
+413,raw strawberry,69,2023-04-26
+414,canned coconut juice,52,2023-04-29
+415,raw strawberry,19,2023-04-26
+416,milk,30,2023-04-21
+417,green tea,24,2023-04-24
+418,ube flavoring,98,2023-04-24
+419,milk,19,2023-04-28
+420,raw pineapples,50,2023-04-25
+421,honey,34,2023-04-25
+422,ube flavoring,7,2023-04-24
+423,raw strawberry,54,2023-04-29
+424,canned mango,28,2023-04-27
+425,cane sugar,58,2023-05-01
+426,ube flavoring,74,2023-04-23
+427,milk,33,2023-05-02
+428,tapioca,41,2023-04-29
+429,lychee tea,24,2023-04-24
+430,raw pineapples,87,2023-04-25
+431,lychee tea,87,2023-05-02
+432,lychee tea,35,2023-04-30
+433,lychee tea,3,2023-04-25
+434,raw pineapples,58,2023-04-25
+435,ube flavoring,30,2023-04-30
+436,lychee tea,8,2023-04-26
+437,lychee tea,46,2023-04-24
+438,honey,93,2023-04-26
+439,tapioca,70,2023-04-21
+440,tapioca,92,2023-04-22
+441,lychee tea,3,2023-04-25
+442,ube flavoring,33,2023-04-24
+443,cane sugar,77,2023-04-26
+444,raw pineapples,67,2023-04-29
+445,green tea,4,2023-04-28
+446,canned mango,42,2023-04-26
+447,cane sugar,23,2023-04-23
+448,raw strawberry,89,2023-04-29
+449,cane sugar,57,2023-04-27
+450,canned coconut juice,70,2023-04-25
+451,green tea,9,2023-04-24
+452,canned mango,83,2023-04-28
+453,green tea,33,2023-04-30
+454,raw pineapples,50,2023-04-26
+455,canned coconut juice,67,2023-04-24
+456,black tea,84,2023-04-24
+457,raw pineapples,77,2023-04-29
+458,ube flavoring,48,2023-05-01
+459,tapioca,78,2023-04-23
+460,milk,13,2023-05-02
+461,cane sugar,95,2023-05-02
+462,honey,29,2023-04-28
+463,ube flavoring,90,2023-05-02
+464,raw strawberry,39,2023-04-28
+465,honey,5,2023-05-01
+466,milk,71,2023-05-01
+467,tapioca,88,2023-04-25
+468,green tea,77,2023-04-26
+469,ube flavoring,36,2023-04-28
+470,raw pineapples,99,2023-04-23
+471,black tea,99,2023-05-01
+472,cane sugar,32,2023-04-24
+473,cane sugar,74,2023-05-01
+474,raw strawberry,10,2023-04-30
+475,lychee tea,35,2023-04-30
+476,canned mango,79,2023-04-22
+477,canned mango,82,2023-04-22
+478,raw pineapples,96,2023-04-26
+479,milk,53,2023-05-02
+480,ube flavoring,25,2023-04-22
+481,canned mango,19,2023-04-30
+482,honey,65,2023-04-26
+483,raw pineapples,44,2023-04-24
+484,tapioca,1,2023-04-25
+485,green tea,29,2023-05-01
+486,black tea,58,2023-04-29
+487,cane sugar,30,2023-04-24
+488,canned mango,76,2023-04-24
+489,canned coconut juice,43,2023-05-01
+490,cane sugar,95,2023-04-28
+491,cane sugar,57,2023-05-02
+492,canned coconut juice,38,2023-05-01
+493,lychee tea,87,2023-04-28
+494,tapioca,43,2023-05-02
+495,lychee tea,79,2023-04-22
+496,raw strawberry,90,2023-04-27
+497,canned mango,53,2023-04-22
+498,tapioca,49,2023-05-01
+499,milk,53,2023-04-30
+500,canned coconut juice,23,2023-04-23
+501,lychee tea,68,2023-04-23
+502,canned mango,4,2023-04-25
+503,cane sugar,82,2023-05-02
+504,ube flavoring,35,2023-04-22
+505,lychee tea,55,2023-04-26
+506,lychee tea,67,2023-04-28
+507,green tea,37,2023-04-26
+508,canned mango,29,2023-04-27
+509,raw strawberry,83,2023-05-01
+510,milk,17,2023-04-25
+511,lychee tea,23,2023-04-26
+512,canned mango,47,2023-05-01
+513,canned coconut juice,41,2023-04-22
+514,raw pineapples,76,2023-04-22
+515,black tea,51,2023-05-02
+516,ube flavoring,66,2023-04-28
+517,raw strawberry,91,2023-04-30
+518,honey,45,2023-04-21
+519,raw pineapples,59,2023-04-25
+520,cane sugar,69,2023-04-30
+521,ube flavoring,50,2023-04-28
+522,milk,60,2023-04-22
+523,lychee tea,18,2023-04-22
+524,cane sugar,11,2023-04-29
+525,canned mango,44,2023-04-21
+526,green tea,22,2023-04-22
+527,green tea,80,2023-04-29
+528,lychee tea,100,2023-05-01
+529,green tea,75,2023-04-30
+530,green tea,69,2023-04-21
+531,honey,74,2023-04-28
+532,black tea,45,2023-04-24
+533,canned mango,90,2023-04-26
+534,canned mango,71,2023-04-25
+535,lychee tea,15,2023-05-01
+536,honey,89,2023-04-23
+537,milk,70,2023-04-27
+538,canned coconut juice,20,2023-04-23
+539,raw pineapples,41,2023-04-23
+540,milk,12,2023-04-22
+541,canned coconut juice,34,2023-05-01
+542,milk,7,2023-04-29
+543,lychee tea,76,2023-04-30
+544,cane sugar,65,2023-04-21
+545,canned mango,3,2023-04-22
+546,canned mango,49,2023-05-01
+547,milk,76,2023-04-27
+548,cane sugar,78,2023-04-23
+549,green tea,29,2023-05-01
+550,honey,89,2023-04-21
+551,milk,25,2023-04-26
+552,milk,93,2023-04-22
+553,tapioca,13,2023-04-28
+554,milk,58,2023-04-30
+555,canned coconut juice,47,2023-04-22
+556,raw strawberry,10,2023-04-25
+557,black tea,77,2023-05-02
+558,green tea,57,2023-04-25
+559,canned mango,77,2023-04-27
+560,canned mango,49,2023-04-30
+561,lychee tea,30,2023-04-29
+562,honey,24,2023-04-30
+563,canned coconut juice,17,2023-04-30
+564,canned coconut juice,37,2023-04-30
+565,canned mango,93,2023-04-27
+566,milk,31,2023-04-27
+567,canned coconut juice,28,2023-04-27
+568,raw strawberry,50,2023-04-27
+569,tapioca,20,2023-04-23
+570,honey,19,2023-04-28
+571,canned mango,88,2023-04-25
+572,green tea,13,2023-04-24
+573,green tea,18,2023-04-27
+574,honey,81,2023-04-29
+575,tapioca,24,2023-04-29
+576,green tea,22,2023-04-21
+577,raw strawberry,77,2023-04-23
+578,green tea,47,2023-04-25
+579,black tea,55,2023-04-30
+580,raw pineapples,66,2023-05-02
+581,green tea,10,2023-04-24
+582,raw pineapples,87,2023-04-25
+583,canned coconut juice,8,2023-04-24
+584,raw pineapples,53,2023-04-27
+585,milk,59,2023-04-25
+586,canned coconut juice,14,2023-04-25
+587,milk,97,2023-05-02
+588,black tea,9,2023-04-25
+589,canned mango,89,2023-05-01
+590,green tea,64,2023-04-28
+591,lychee tea,14,2023-04-24
+592,cane sugar,1,2023-04-27
+593,honey,59,2023-04-25
+594,milk,23,2023-04-21
+595,milk,96,2023-04-25
+596,raw strawberry,42,2023-04-28
+597,lychee tea,78,2023-04-30
+598,black tea,6,2023-04-27
+599,cane sugar,25,2023-05-01
+600,canned mango,63,2023-04-25
+601,cane sugar,14,2023-04-23
+602,black tea,65,2023-04-30
+603,milk,8,2023-05-01
+604,milk,66,2023-04-24
+605,canned mango,80,2023-04-22
+606,lychee tea,87,2023-05-01
+607,cane sugar,81,2023-04-29
+608,raw pineapples,47,2023-04-27
+609,lychee tea,99,2023-04-21
+610,ube flavoring,99,2023-05-01
+611,raw pineapples,56,2023-04-25
+612,raw strawberry,44,2023-04-21
+613,tapioca,11,2023-04-28
+614,canned coconut juice,94,2023-04-25
+615,canned mango,87,2023-04-30
+616,ube flavoring,19,2023-04-29
+617,raw strawberry,48,2023-05-01
+618,honey,95,2023-04-26
+619,lychee tea,62,2023-04-22
+620,canned mango,74,2023-04-21
+621,cane sugar,97,2023-04-28
+622,milk,41,2023-04-26
+623,canned mango,95,2023-04-24
+624,canned coconut juice,11,2023-04-30
+625,lychee tea,72,2023-04-24
+626,ube flavoring,16,2023-04-28
+627,honey,5,2023-04-22
+628,cane sugar,49,2023-04-28
+629,canned mango,82,2023-04-26
+630,canned mango,29,2023-04-29
+631,cane sugar,32,2023-04-25
+632,milk,73,2023-05-02
+633,ube flavoring,12,2023-05-02
+634,raw pineapples,60,2023-04-26
+635,ube flavoring,93,2023-04-30
+636,black tea,27,2023-04-22
+637,tapioca,22,2023-04-24
+638,honey,51,2023-04-28
+639,lychee tea,90,2023-04-21
+640,black tea,28,2023-04-27
+641,cane sugar,17,2023-05-01
+642,honey,41,2023-04-28
+643,ube flavoring,73,2023-04-25
+644,raw pineapples,97,2023-04-30
+645,ube flavoring,87,2023-04-27
+646,ube flavoring,44,2023-04-21
+647,honey,89,2023-05-01
+648,black tea,92,2023-04-24
+649,lychee tea,17,2023-04-23
+650,lychee tea,83,2023-04-22
+651,black tea,93,2023-04-23
+652,tapioca,83,2023-04-24
+653,ube flavoring,68,2023-05-01
+654,tapioca,72,2023-04-21
+655,honey,84,2023-04-24
+656,honey,13,2023-04-26
+657,tapioca,14,2023-04-27
+658,lychee tea,22,2023-05-01
+659,ube flavoring,22,2023-04-22
+660,canned mango,100,2023-04-30
+661,raw pineapples,3,2023-04-25
+662,raw pineapples,34,2023-04-26
+663,canned mango,18,2023-05-01
+664,tapioca,57,2023-05-01
+665,raw strawberry,49,2023-04-27
+666,canned coconut juice,66,2023-05-01
+667,green tea,87,2023-04-27
+668,honey,93,2023-04-22
+669,raw strawberry,7,2023-04-22
+670,raw pineapples,88,2023-04-24
+671,cane sugar,10,2023-04-27
+672,lychee tea,9,2023-05-01
+673,raw strawberry,59,2023-04-25
+674,tapioca,8,2023-04-23
+675,tapioca,19,2023-04-29
+676,milk,45,2023-04-26
+677,honey,38,2023-04-27
+678,green tea,25,2023-04-25
+679,honey,65,2023-04-23
+680,black tea,79,2023-05-02
+681,cane sugar,9,2023-04-23
+682,cane sugar,47,2023-04-28
+683,cane sugar,3,2023-04-27
+684,lychee tea,37,2023-04-23
+685,raw strawberry,8,2023-05-02
+686,tapioca,99,2023-04-29
+687,raw pineapples,81,2023-04-28
+688,tapioca,71,2023-04-27
+689,honey,39,2023-04-21
+690,honey,46,2023-04-21
+691,black tea,72,2023-04-25
+692,raw pineapples,30,2023-04-30
+693,tapioca,44,2023-04-26
+694,canned mango,93,2023-04-25
+695,tapioca,34,2023-04-24
+696,honey,99,2023-04-28
+697,tapioca,73,2023-04-24
+698,tapioca,39,2023-04-29
+699,raw pineapples,21,2023-04-24
+700,ube flavoring,23,2023-05-02
+701,milk,56,2023-05-02
+702,cane sugar,36,2023-04-24
+703,tapioca,21,2023-05-01
+704,black tea,5,2023-04-26
+705,lychee tea,46,2023-04-24
+706,black tea,26,2023-05-02
+707,green tea,30,2023-04-27
+708,milk,38,2023-04-28
+709,honey,55,2023-04-30
+710,lychee tea,44,2023-04-27
+711,tapioca,78,2023-04-28
+712,honey,34,2023-04-27
+713,raw pineapples,3,2023-04-29
+714,honey,72,2023-04-24
+715,raw strawberry,1,2023-04-26
+716,cane sugar,21,2023-04-29
+717,black tea,35,2023-05-02
+718,canned mango,75,2023-04-26
+719,raw pineapples,50,2023-05-02
+720,canned mango,30,2023-04-27
+721,raw pineapples,43,2023-04-26
+722,canned mango,81,2023-04-28
+723,canned coconut juice,23,2023-04-24
+724,cane sugar,41,2023-04-29
+725,canned mango,20,2023-04-28
+726,green tea,92,2023-04-29
+727,canned mango,58,2023-04-30
+728,milk,63,2023-04-24
+729,canned mango,93,2023-04-22
+730,tapioca,23,2023-04-25
+731,cane sugar,28,2023-04-27
+732,milk,64,2023-04-23
+733,cane sugar,2,2023-05-02
+734,green tea,63,2023-05-02
+735,black tea,5,2023-04-25
+736,tapioca,9,2023-04-21
+737,honey,54,2023-04-29
+738,green tea,98,2023-04-27
+739,canned coconut juice,83,2023-04-22
+740,canned mango,24,2023-04-29
+741,black tea,58,2023-05-02
+742,canned coconut juice,76,2023-04-29
+743,cane sugar,43,2023-04-24
+744,cane sugar,39,2023-04-24
+745,black tea,74,2023-04-21
+746,green tea,90,2023-04-29
+747,tapioca,100,2023-04-24
+748,canned mango,63,2023-04-27
+749,milk,3,2023-05-02
+750,ube flavoring,98,2023-04-30
+751,honey,86,2023-04-23
+752,raw strawberry,13,2023-04-23
+753,canned coconut juice,77,2023-04-30
+754,tapioca,97,2023-04-21
+755,lychee tea,24,2023-04-30
+756,black tea,31,2023-04-24
+757,milk,99,2023-04-25
+758,cane sugar,30,2023-04-27
+759,black tea,82,2023-04-30
+760,honey,45,2023-04-22
+761,canned coconut juice,5,2023-04-27
+762,cane sugar,83,2023-04-22
+763,black tea,49,2023-05-02
+764,canned mango,41,2023-04-27
+765,milk,50,2023-04-26
+766,honey,34,2023-04-25
+767,black tea,90,2023-05-02
+768,milk,74,2023-05-01
+769,lychee tea,43,2023-04-26
+770,honey,62,2023-04-27
+771,tapioca,70,2023-04-24
+772,honey,65,2023-05-02
+773,green tea,19,2023-04-26
+774,ube flavoring,48,2023-04-26
+775,black tea,85,2023-04-25
+776,tapioca,56,2023-04-28
+777,lychee tea,97,2023-04-21
+778,lychee tea,1,2023-05-02
+779,canned mango,90,2023-05-01
+780,raw strawberry,12,2023-04-24
+781,raw strawberry,97,2023-04-22
+782,canned coconut juice,22,2023-04-23
+783,black tea,61,2023-05-01
+784,black tea,37,2023-04-24
+785,raw strawberry,44,2023-04-23
+786,lychee tea,44,2023-05-01
+787,cane sugar,61,2023-04-26
+788,tapioca,14,2023-04-26
+789,green tea,1,2023-05-01
+790,raw strawberry,74,2023-04-27
+791,tapioca,1,2023-04-30
+792,milk,50,2023-04-23
+793,lychee tea,46,2023-04-26
+794,milk,74,2023-05-01
+795,raw strawberry,17,2023-04-25
+796,ube flavoring,40,2023-04-28
+797,ube flavoring,94,2023-04-24
+798,ube flavoring,21,2023-04-21
+799,canned mango,55,2023-05-01
+800,ube flavoring,43,2023-04-29
+801,honey,9,2023-04-26
+802,honey,57,2023-04-24
+803,milk,37,2023-04-25
+804,canned coconut juice,46,2023-05-02
+805,green tea,49,2023-04-29
+806,green tea,35,2023-04-26
+807,tapioca,81,2023-04-24
+808,cane sugar,38,2023-04-26
+809,tapioca,82,2023-04-29
+810,milk,100,2023-05-01
+811,cane sugar,99,2023-04-24
+812,canned mango,65,2023-05-01
+813,raw strawberry,52,2023-04-27
+814,ube flavoring,67,2023-04-30
+815,green tea,48,2023-04-29
+816,canned coconut juice,86,2023-04-22
+817,honey,80,2023-04-24
+818,green tea,96,2023-04-28
+819,ube flavoring,88,2023-04-22
+820,milk,33,2023-04-21
+821,black tea,22,2023-04-26
+822,ube flavoring,7,2023-04-29
+823,raw strawberry,97,2023-04-25
+824,milk,70,2023-04-25
+825,raw pineapples,49,2023-04-25
+826,cane sugar,50,2023-04-21
+827,honey,3,2023-04-29
+828,lychee tea,19,2023-05-02
+829,lychee tea,2,2023-04-30
+830,cane sugar,18,2023-04-21
+831,milk,82,2023-04-23
+832,green tea,42,2023-04-29
+833,raw pineapples,82,2023-04-23
+834,raw pineapples,47,2023-04-27
+835,lychee tea,69,2023-05-02
+836,ube flavoring,44,2023-04-25
+837,milk,85,2023-05-01
+838,green tea,6,2023-04-27
+839,canned mango,37,2023-04-26
+840,lychee tea,16,2023-04-24
+841,lychee tea,44,2023-04-25
+842,cane sugar,33,2023-04-28
+843,canned coconut juice,77,2023-05-01
+844,canned coconut juice,58,2023-04-25
+845,cane sugar,74,2023-05-02
+846,tapioca,80,2023-04-29
+847,canned coconut juice,9,2023-04-24
+848,lychee tea,73,2023-04-24
+849,raw strawberry,20,2023-04-25
+850,raw strawberry,86,2023-04-29
+851,milk,51,2023-05-02
+852,milk,3,2023-04-22
+853,honey,9,2023-04-27
+854,raw pineapples,87,2023-04-27
+855,lychee tea,87,2023-04-21
+856,ube flavoring,30,2023-04-26
+857,tapioca,92,2023-04-21
+858,honey,51,2023-05-01
+859,tapioca,95,2023-05-02
+860,milk,58,2023-04-27
+861,ube flavoring,87,2023-04-24
+862,raw pineapples,82,2023-04-28
+863,canned coconut juice,24,2023-04-22
+864,raw pineapples,54,2023-04-23
+865,raw strawberry,98,2023-04-27
+866,milk,16,2023-04-25
+867,green tea,21,2023-04-22
+868,black tea,78,2023-04-21
+869,raw pineapples,33,2023-04-27
+870,ube flavoring,29,2023-04-30
+871,milk,70,2023-04-29
+872,cane sugar,41,2023-04-29
+873,tapioca,12,2023-04-21
+874,canned coconut juice,83,2023-04-23
+875,cane sugar,70,2023-04-22
+876,raw strawberry,8,2023-04-28
+877,canned coconut juice,96,2023-05-01
+878,milk,22,2023-04-24
+879,canned mango,33,2023-04-22
+880,honey,23,2023-04-22
+881,milk,39,2023-04-28
+882,tapioca,37,2023-04-25
+883,canned mango,27,2023-04-28
+884,ube flavoring,8,2023-04-25
+885,canned mango,74,2023-05-01
+886,lychee tea,96,2023-04-24
+887,ube flavoring,20,2023-04-24
+888,ube flavoring,1,2023-05-01
+889,black tea,36,2023-04-29
+890,green tea,54,2023-04-27
+891,honey,36,2023-04-27
+892,ube flavoring,82,2023-04-23
+893,raw strawberry,73,2023-04-21
+894,lychee tea,73,2023-05-02
+895,ube flavoring,68,2023-04-25
+896,raw pineapples,100,2023-05-02
+897,raw strawberry,56,2023-04-21
+898,ube flavoring,78,2023-04-25
+899,green tea,89,2023-04-26
+900,tapioca,51,2023-04-21
+901,canned mango,15,2023-04-22
+902,milk,98,2023-04-30
+903,tapioca,2,2023-04-28
+904,raw pineapples,41,2023-04-30
+905,raw pineapples,82,2023-04-27
+906,ube flavoring,28,2023-04-25
+907,tapioca,89,2023-04-28
+908,raw strawberry,72,2023-04-29
+909,tapioca,53,2023-04-24
+910,honey,99,2023-04-30
+911,canned mango,2,2023-05-01
+912,canned coconut juice,51,2023-04-21
+913,cane sugar,76,2023-04-24
+914,honey,28,2023-04-23
+915,raw pineapples,18,2023-04-23
+916,ube flavoring,51,2023-05-02
+917,ube flavoring,100,2023-04-29
+918,raw pineapples,16,2023-04-23
+919,black tea,78,2023-04-29
+920,black tea,30,2023-04-26
+921,black tea,16,2023-04-22
+922,green tea,72,2023-04-23
+923,tapioca,63,2023-05-01
+924,raw strawberry,37,2023-04-27
+925,tapioca,84,2023-04-21
+926,green tea,61,2023-04-30
+927,canned mango,63,2023-04-21
+928,green tea,22,2023-05-02
+929,canned mango,58,2023-04-22
+930,honey,92,2023-05-01
+931,lychee tea,68,2023-04-23
+932,honey,48,2023-04-24
+933,milk,30,2023-04-22
+934,canned coconut juice,86,2023-04-24
+935,honey,71,2023-04-28
+936,green tea,93,2023-04-29
+937,lychee tea,38,2023-04-23
+938,honey,64,2023-05-01
+939,black tea,17,2023-04-25
+940,honey,52,2023-04-21
+941,milk,9,2023-04-23
+942,ube flavoring,38,2023-04-22
+943,canned mango,58,2023-04-25
+944,lychee tea,98,2023-04-24
+945,cane sugar,89,2023-04-22
+946,cane sugar,76,2023-04-21
+947,raw strawberry,12,2023-04-27
+948,tapioca,4,2023-04-21
+949,raw strawberry,6,2023-04-28
+950,raw pineapples,17,2023-04-27
+951,raw strawberry,26,2023-04-27
+952,black tea,29,2023-04-21
+953,black tea,95,2023-04-22
+954,milk,64,2023-05-01
+955,cane sugar,32,2023-04-23
+956,lychee tea,92,2023-04-23
+957,tapioca,99,2023-04-28
+958,canned mango,6,2023-04-26
+959,honey,74,2023-04-22
+960,tapioca,36,2023-04-30
+961,lychee tea,9,2023-04-22
+962,cane sugar,71,2023-04-24
+963,green tea,40,2023-04-29
+964,ube flavoring,66,2023-04-28
+965,canned coconut juice,31,2023-04-26
+966,ube flavoring,33,2023-04-23
+967,honey,53,2023-04-26
+968,black tea,21,2023-04-29
+969,canned mango,30,2023-04-27
+970,cane sugar,62,2023-04-23
+971,raw pineapples,97,2023-04-26
+972,black tea,95,2023-04-28
+973,ube flavoring,30,2023-04-21
+974,cane sugar,73,2023-04-24
+975,milk,11,2023-04-26
+976,cane sugar,58,2023-04-23
+977,ube flavoring,54,2023-04-26
+978,cane sugar,8,2023-04-30
+979,black tea,17,2023-04-25
+980,black tea,84,2023-04-27
+981,lychee tea,24,2023-04-25
+982,ube flavoring,59,2023-04-23
+983,green tea,51,2023-04-30
+984,canned coconut juice,80,2023-04-28
+985,raw strawberry,68,2023-04-23
+986,canned coconut juice,26,2023-04-28
+987,tapioca,98,2023-05-01
+988,black tea,74,2023-04-22
+989,canned coconut juice,52,2023-04-30
+990,cane sugar,64,2023-04-29
+991,canned coconut juice,21,2023-04-29
+992,cane sugar,18,2023-05-02
+993,canned mango,41,2023-04-21
+994,honey,42,2023-05-02
+995,ube flavoring,43,2023-05-02
+996,ube flavoring,92,2023-04-22
+997,raw pineapples,27,2023-04-30
+998,canned mango,58,2023-04-28
+999,milk,5,2023-04-26
+1000,ube flavoring,20,2023-04-21
