@@ -8,7 +8,7 @@ manager = Blueprint('manager', __name__)
 @manager.route('/employee/<storeID>', methods=['GET'])
 def get_employees(storeID):
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT phone, email, first_name, last_name FROM `Employee` E JOIN Store S USING(store_id) WHERE E.store_id = {0};'.format(storeID))
+    cursor.execute('SELECT phone, email, first_name, last_name, employee_id, store_id FROM `Employee` E JOIN Store S USING(store_id) WHERE E.store_id = {0};'.format(storeID))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
