@@ -140,7 +140,6 @@ def update_stock():
     the_data = request.json
 
     stock_id = the_data['stock_id']
-    order_date_time = the_data['order_date_time']
     name = the_data['name']
     quantity = the_data['quantity']
 
@@ -149,7 +148,6 @@ def update_stock():
     # UPDATE Stock SET name = 'bingus', order_date_time = '2012-04-21T18:25:43-05:00', quantity = 254 WHERE stock_id = 2;
 
     the_query = 'UPDATE Stock SET '
-    the_query += 'order_date_time = "' + order_date_time + '", '
     the_query += 'name = "' + name + '", '
     the_query += 'quantity = ' + str(quantity) + ' '
     the_query += 'WHERE stock_id = {0};'.format(stock_id)
