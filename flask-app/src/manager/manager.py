@@ -47,33 +47,6 @@ def add_employee():
 
     return "successfully hired " + first_name + " " + last_name + " at store #" + str(store_id) + " with data: " + str(the_data) + "\n and query: " + the_query
 
-### Below is an alternate POST route that adds a new store to a region in the database
-@manager.route('/addStore', methods=['POST'])
-def add_store():
-
-    the_data = request.json
-
-    hours = the_data['hours']
-    region_id = the_data['region_id']
-    street = the_data['street']
-    city = the_data['city']
-    zip = the_data['zip']
-    name = the_data['name']
-    store_id = the_data['store_id']
-
-    current_app.logger.info(the_data)
-
-    the_query = "INSERT INTO `Store`(hours, region_id, street, city, zip, name, store_id) VALUES ('{hours}', {region_id}, '{street}', '{city}', {zip}, '{name}', {store_id})".format(hours=str(hours), region_id=str(region_id), street=str(street), city=str(city), zip=str(zip), name=str(name), store_id=str(store_id))
-    
-    try:
-        cursor = db.get_db().cursor()
-        cursor.execute(the_query)
-        db.get_db().commit()
-    except:
-        return "query: " + the_query + "\ndb exception: failed to execute\nyou may need to reseed data since this is a primary key"
-
-    return "successfully added " + name + " at store #" + str(store_id) + " with data: " + str(the_data) + "\n and query: " + the_query
-
 # Update the information of a given employee, such as their name, phone number, and email address
 @manager.route('/updateEmployee', methods=['PUT'])
 def update_employee():
