@@ -14,6 +14,7 @@ This repository is already configured to properly build:
 1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`.
+1. To completely reset the database, `docker compose down`, then `docker compose up` may help.
 
 ## Project Overview
 
